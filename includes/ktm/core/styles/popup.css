@@ -1,0 +1,179 @@
+@import url("skin.css");
+
+.actInputs {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 2px;
+	margin-bottom: 0px;
+	width: 70px;
+	text-align: center;
+	margin: 3px;
+	font-size: 10px;
+	}
+
+
+/* common :: dialogs */
+.ktml_dialog {
+	margin: 0px;
+	padding: 0px;
+}
+
+.ktml_dialog td {
+	white-space: nowrap;
+	vertical-align: top;
+}
+
+#content, #buttons {
+	padding: 5px;
+}
+
+#buttons{
+	width: 80px;
+}
+
+#buttons input{
+	width: 70px;
+	font-size: 10px;
+	display: block;
+	margin: 0 auto 3px auto;
+}
+
+.small_txt {
+	width:140px;
+	font-size: 10px;
+	display: block;
+	margin: -1px;
+
+}
+.small_sel {
+	width:140px;
+	font-size: 10px;
+	display: block;
+	margin: -2px 0px;
+
+}
+
+.dom_modal_dialog {
+	display: none;
+	position:absolute;
+	left:10px;
+	top:100px;
+	width:200px;
+	height:140px;
+	border:2px outset white;
+	background-color:buttonface;
+	z-index:400;
+}
+
+.dom_modal_dialog_title {
+	padding:3px 4px;
+	border:1px outset white;
+	background-color:activecaption;
+	color:captiontext;
+	font:caption;
+	cursor:default;
+}
+
+.dom_modal_dialog_content {
+	padding:6px;
+	text-align:center;
+}
+
+/*
+ * styles specific to the List Values popup window
+ *
+ */
+ 
+ 
+/*the plus, minus, up, down buttons*/
+table.PMUD_buttons{
+	margin-top: 5px;
+	margin-left: 3px;
+	margin-bottom: 3px;
+	width: 280px;
+}
+	.PMUD_buttons button{
+		width: 20px;
+		height:20px;
+		overflow: hidden;
+		padding: 0px;
+		margin: 0px 1px;
+	}
+		.PMUD_buttons #btnAdd img,
+		.PMUD_buttons #btnDel img,
+		.PMUD_buttons #btnUp img,
+		.PMUD_buttons #btnDown img{
+			margin-top: -1px;
+			margin-left: -2px;
+		}
+		.PMUD_buttons #btnDown img{
+			margin-left: -1px;
+		}
+		/* Mozilla's Correction */
+		table.PMUD_buttons #btnAdd > img,
+		table.PMUD_buttons #btnDel > img{
+			margin-left: -3px;	
+		}
+
+/*the editor*/
+table.listval_table{
+	width: 281px;
+	margin-left: 3px;
+	overflow: hidden;
+}
+	/*the two columns*/
+	table.listval_table div.listval_label{
+		font-size: 10px;
+		text-align: left;
+		width: 143px;
+		overflow: hidden;
+	}
+	/*the separator between*/
+	table.listval_table div.sep{
+		width: 1px;
+		height: 127px;
+		margin-top: 1px;
+		overflow: hidden;
+		
+	}
+
+
+			/*input & select on left*/
+			table.listval_table input.label,
+			table.listval_table select.label{
+				font-size: 10px;
+				width: 149px;
+			}
+				/*select on left only*/
+				table.listval_table select.label{
+					margin-left: -1px;
+					height: 111px;
+				}
+			/*input & select on right*/
+			table.listval_table input.value,
+			table.listval_table select.value{
+				font-size: 10px;
+				width: 140px;
+				margin-left: -4px;
+				padding-left: 4px;
+			}
+				/*select on right only*/
+				table.listval_table select.value{
+				height: 111px;
+				}
+		
+		/*separators*/
+		.hsep{
+			width: 67px;
+			height: 2px;
+			margin-left: 1px;
+			margin-top: 6px;
+			margin-bottom: 3px;
+			display: block;
+
+		}
+		.vsep{
+			width: 2px;
+			height: 200px;
+		}
+	

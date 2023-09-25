@@ -1,0 +1,62 @@
+#bar {
+	background-image: url(../sdmenu/blue/footer.jpg);
+	margin: 0px;
+	padding: 0px;
+	height: 35px;
+	width: 880px;
+	font-family: arial;
+	font-size: 12px;
+	line-height: 32px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: center;
+}
+.td {
+	border: 1px solid #AED6F7;
+}
+#right {
+	margin: 0px;
+	padding: 10px;
+	width: 600px;
+	font-family: arial;
+	font-size: 12px;
+	color: #0166AA;
+	line-height: 20px;
+}
+.tarea {
+	border: 1px solid #AED6F7;
+	font-family: arial;
+	font-size: 12px;
+	color: #0067AC;
+}
+.tarea2 {
+	border: 1px solid #AED6F7;
+	font-family: arial;
+	font-size: 12px;
+	color: #FFFFFF;
+	width:180px;
+	background-color: #0066AE;
+	line-height:22px;
+}
+.header {
+	font-family: arial;
+	font-size: 16px;
+	font-weight: bold;
+	color: #0067AA;
+}
+a:link {
+	color: #0166AA;
+	text-decoration:none;
+}
+a:visited {
+	color: #0166AA;
+	text-decoration:none;
+}
+a:hover {
+	color: #018DEB;
+	text-decoration:underline;
+}
+a:active {
+	color: #0166AA;
+	text-decoration:none;
+}

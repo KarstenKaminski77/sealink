@@ -1,0 +1,234 @@
+/* common :: general classes */
+.ktml_about {
+	background-color: #ffffff;
+}
+
+.ktml_bg {
+	background: url(../../core/img/ktml_bg.gif) repeat-y !important;
+}
+
+.ktml_about, .ktml_bg, .ktml_bg td, .ktml_bg th {
+	font: 11px "Microsoft Sans Serif",Tahoma,Arial,Verdana,sans-serif;
+}
+
+.ktml_panel {
+	border: 1px solid #fff;
+	border-color: #848284 #ffffff #ffffff #848284;
+}
+.ktml_canvas {
+	background-color:#FFFFFF;
+	border: 1px solid #424142;
+	border-color: #424142 #A5A2A5 #C5C2C5 #424142;
+}
+
+.ktml_dialog #content {
+	border-right: 1px solid #848284;
+}
+
+.ktml_dialog #buttons{
+	border-left: 1px solid white;
+}
+
+/* common :: forms */
+.ktml_input, .ktml_label, .ktml_button, .ktml_legend, .ktml_select {
+	font: 11px "Microsoft Sans Serif",Tahoma,Arial,Verdana,sans-serif;
+}
+.ktml_input, .ktml_select {
+	margin:0px;
+}
+/*
+.ktml_input {
+	border: 1px solid #A5A2A5;
+	margin: 0px;
+	padding: 1px;
+}
+*/
+
+.ktml_select {
+}
+.ktml_fieldset {
+	height: 90%;
+	margin: 2px;
+	padding: 2px;
+	border: 1px solid #666666;
+}
+
+.ktml_button {
+	cursor: default;
+}
+
+#modalBlocker {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-color: white;
+	filter: alpha(opacity = 1);
+	-moz-opacity: 0.01;
+}
+
+.interfaceBlocker {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: white;
+	filter: alpha(opacity = 1);
+	-moz-opacity: 0.01;
+}
+
+.clickableInterfaceBlocker {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: white;
+	filter: alpha(opacity = 1);
+	-moz-opacity: 0.01;
+}
+
+/* CONTEXTUAL MENU */
+div.ktmlContextMenuDIV {
+	border: 1px solid #636563 !important;
+	background-color:#FFFBF7;
+	font: menu !important;
+	padding: 1px !important;
+	position:absolute !important; 
+	width:10px;
+	height:10px;
+	top:0px;
+	left:0px;
+	display:block;
+	z-index:999;
+}
+
+div.ktmlContextMenuDIV table {
+	border-collapse: separate !important;
+	border: auto !important;
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;	
+}
+
+.ktmlContextMenuDIV td {
+	padding: 3px !important;
+	white-space: nowrap !important;
+
+	border: none;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.ktmlContextMenuDIV td.ktmlContextMenuImages {
+	background-image:url(../img/contextmenu_bg.gif) !important;
+	background-repeat:repeat-y !important;
+}
+
+.ktmlContextMenuDIV td.ktmlContextMenuSubmenu  {
+	padding: 3px !important;
+	width:16px !important;
+	vertical-align:middle !important;
+}
+
+/****************************/
+/*  menu item default-state */
+/****************************/
+.ktmlContextMenuItem_default {
+	background-color: transparent !important;
+	cursor:default !important;
+}
+.ktmlContextMenuItem_default td.ktmlContextMenuImages,
+.ktmlContextMenuItem_default td.ktmlContextMenuText,
+.ktmlContextMenuItem_default td.ktmlContextMenuSubmenu {
+	border: none !important;
+	padding: 3px !important;
+	white-space: nowrap !important;
+}
+.ktmlContextMenuItem_default td.ktmlContextMenuImages {
+	width: 49px;
+}
+.ktmlContextMenuItem_default .toolbaritem_flat,
+.ktmlContextMenuItem_default .toolbaritem_outset,
+.ktmlContextMenuItem_default .toolbaritem_latched,
+.ktmlContextMenuItem_default .toolbaritem_disabled,
+.ktmlContextMenuItem_highlight .toolbaritem_flat,
+.ktmlContextMenuItem_highlight .toolbaritem_outset,
+.ktmlContextMenuItem_highlight .toolbaritem_latched,
+.ktmlContextMenuItem_highlight .toolbaritem_disabled
+ {	
+	width: 20px !important;
+	height: 20px !important;
+	position: relative !important;
+	top: 5px !important;;
+	left: -5px !important;;
+}
+
+
+
+/****************************/
+/*  menu item highlighted   */
+/****************************/
+.ktmlContextMenuItem_highlight {
+	background-color: #D1D0E6;
+	cursor:default !important;
+}
+.ktmlContextMenuItem_highlight td.ktmlContextMenuImages {
+	border: 1px solid #08246B !important;
+	border-width: 1px 0px 1px 1px !important;
+	padding: 2px 3px 2px 2px !important;
+	background-image:none !important;
+	white-space: nowrap !important;
+	width: 49px;
+}
+.ktmlContextMenuItem_highlight td.ktmlContextMenuText {
+	border: 1px solid #08246B !important;
+	border-width: 1px 0px 1px 0px !important;
+	padding: 2px 3px 2px 3px !important;
+}
+
+.ktmlContextMenuItem_highlight td.ktmlContextMenuSubmenu {
+	border: 1px solid #08246B !important;
+	border-width: 1px 1px 1px 0px !important;
+	padding: 2px 2px 2px 3px !important;
+}
+
+.ktmlContextMenuItem_invisible {
+	display:none !important;
+}
+
+.ktmlContextMenuItem_disabled {
+	cursor:default !important;
+}
+
+.ktmlContextMenuItem_disabled td.ktmlContextMenuImages img {
+	filter: alpha(opacity = 25) !important;
+	-moz-opacity: 0.3 !important;
+}
+.ktmlContextMenuItem_disabled td.ktmlContextMenuText {
+	color:#8C8E8C !important;
+}
+
+/*
+ * Tooltip replacement for mozilla
+ *
+ */
+div.tooltip_div {
+	position: absolute;
+	display: none;
+	background-color: #ffffe1;
+	font: 11px Verdana, sans-serif;
+	border: 1px solid black;
+	padding: 2px 3px 2px 3px;
+}
+
+
+/*
+ * color monitors for PI color pickers
+ *
+ */
+ .colorMonitor{
+ 	display: block;
+ 	overflow: hidden;
+ 	height: 4px;
+ 	width: 16px;
+ 	background-color: transparent;
+ 	margin-top: -3px;
+ 	margin-left: auto;
+ 	margin-right: auto;
+}

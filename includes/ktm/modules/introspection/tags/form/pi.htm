@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Form Properties</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script src="../../../../../common/js/base.js"></script>
+<script src="../../../../../common/js/utility.js"></script>
+<script src="../common.js"></script>
+</head>
+<body onLoad="initializeUI('form')">
+<div id="Properties_form___objectName__" class="property_body ktml_bg"> <nobr>
+  <table border="0" class="introspector">
+    <tr>
+      <td nowrap="nowrap" style="white-space: nowrap !important; text-align: left">||Introspection ID Label||:&nbsp;</td>
+      <td rowspan="2" nowrap="nowrap"><img ssrc="__relativeImagePath__/vspacer.gif" height="44" width="2" border="0" style="margin: 0px 3px"></td>
+      <td style="white-space: nowrap !important; text-align: right" nowrap="nowrap">&nbsp;||Action||:&nbsp;</td>
+      <td nowrap="nowrap" colspan="2"><input name="Properties_form_action___objectName__"
+	  			id="Properties_form_action___objectName__"
+	  			tabindex="2"
+	  			type="text"
+	  			class="ktml_input"
+	  			style="width: 150px"
+	  			help_topic_id="PI_form_action"
+	  			onBlur="window['ktml___objectName__'].introspector.apply('action', this.value);"
+	  			onKeyPress="return util_preventEvent(this, event);"
+	  			size="33"/></td>
+      <td style="white-space: nowrap !important; text-align: right" nowrap="nowrap">&nbsp;||Target||:&nbsp;</td>
+      <td style="text-align: right"><select name="Properties_form_target___objectName__"
+	  			id="Properties_form_target___objectName__"
+	  			tabindex="4"
+	  			onkeydown="return util_preventEvent(this, event);"
+	  			class="ktml_select"
+	  			style="width: 130px"
+	  			onkeypress="return util_preventEvent(this, event);"
+	  			help_topic_id="PI_form_target"
+	  			onChange="window['ktml___objectName__'].introspector.apply('target', this.value);">
+          <option selected value=""></option>
+          <option value="_blank">&nbsp;_blank&nbsp;</option>
+          <option value="_parent">&nbsp;_parent&nbsp;</option>
+          <option value="_self">&nbsp;_self&nbsp;</option>
+          <option value="_top">&nbsp;_top&nbsp;</option>
+        </select></td>
+    </tr>
+    <tr>
+      <td nowrap="nowrap"><input name="Properties_form_id___objectName__"
+				tabindex="1"
+				type="text"
+				class="ktml_input"
+				id="Properties_form_id___objectName__"
+				help_topic_id="PI_form_id"
+				onBlur="window['ktml___objectName__'].introspector.apply('id', this.value);"
+				onKeyPress="return util_preventEvent(this, event);"
+				size="12"/>
+        &nbsp;</td>
+      <td nowrap="nowrap" style="white-space: nowrap !important; text-align: right">&nbsp;||Method||:&nbsp;</td>
+      <td nowrap="nowrap"><select name="Properties_form_method___objectName__"
+	 			id="Properties_form_method___objectName__"
+	 			tabindex="3"
+	 			onkeydown="return util_preventEvent(this, event);"
+	 			class="ktml_select" onkeypress="return util_preventEvent(this, event);"
+	 			style="width:60px"
+	 			help_topic_id="PI_form_method"
+	 			onChange="window['ktml___objectName__'].introspector.apply('method', this.value);">
+          <option value=""></option>
+          <option value="get">GET</option>
+          <option value="post" selected>POST</option>
+        </select></td>
+      <td nowrap="nowrap" style="white-space: nowrap !important; text-align: right">&nbsp;||Enctype||:&nbsp;</td>
+      <td colspan="2"><select style="width: 180px" 
+	 			name="Properties_form_enctype___objectName__"
+	 			id="Properties_form_enctype___objectName__" 
+	 			tabindex="5"
+	 			onkeydown="return util_preventEvent(this, event);"
+	 			class="ktml_select" 
+	 			onkeypress="return util_preventEvent(this, event);"
+	 			help_topic_id="PI_form_enctype"
+	 			onChange="window['ktml___objectName__'].introspector.apply('enctype', this.value);">
+          <option selected value=""></option>
+          <option value="application/x-www-form-urlencoded">&nbsp;application/x-www-form-urlencoded&nbsp;</option>
+          <option value="multipart/form-data">&nbsp;multipart/form-data&nbsp;</option>
+        </select></td>
+    </tr>
+  </table>
+  </nobr> </div>
+</body>
+</html>

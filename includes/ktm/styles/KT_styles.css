@@ -1,0 +1,226 @@
+.article_title {
+ font-family: Verdana;
+ font-size:15px;
+ font-weight:bold;
+ color:#3C4070;
+}
+.article_date {
+ font-family: Verdana;
+ font-size:11px;
+ font-weight:bold;
+}
+.article_description {
+ font-family: Verdana;
+ font-size:13px;
+ font-style:italic;
+}
+.article_body {
+ font-family: Verdana;
+ font-size:12px;
+}
+.article_footer {
+ font-family: Verdana;
+ font-size:11px;
+ font-style:italic;
+}
+
+p.class_p_blue{
+	color:blue;
+}
+
+a.class1{
+	color:green;
+}
+a.class2 {
+	color:blue;
+	text-decoration:underline overline;
+}
+td.class1 {
+	border:2px outset yellow;
+	background-color:pink;
+	color:blue;
+}
+td.class4 {
+	border:2px outset lime;
+	background-color:lime;
+	color:red;
+}
+div#kk table.clasee1 tr, a.class3 {
+	background-color:black;
+	color:green;
+}
+
+.normal {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #333333;
+	text-decoration: none;
+}
+.normaltitle {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        line-height: normal;
+        font-weight: bold;
+        font-variant: normal;
+        text-transform: none;
+        color: #333333;
+        text-decoration: none;
+}
+.title {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	font-weight: normal;
+	text-transform: none;
+}
+.title_mail {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        color: #333333;
+        text-decoration: none;
+        font-weight: normal;
+        text-transform: none;
+}
+
+.title_w {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #333333;
+        text-decoration: none;
+        font-weight: normal;
+        text-transform: none;
+}
+
+.ctext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-transform: none;
+	color: #333333;
+	font-weight: normal;
+	text-decoration: none;
+
+
+}
+
+.table10px {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	line-height: 10px;
+	text-decoration: none;
+}
+
+.normalCopy {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: oblique;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #333333;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	border: 1px solid #0099FF;
+}
+
+.whitemenu {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.invertedHover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #000066;
+}
+
+.pinknormal{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #333333;
+	text-decoration: none;
+	background-color: #FFE8F3;
+	border: 1px solid #CCCCCC;
+}
+
+.normalBold {
+
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        line-height: normal;
+        font-weight: bold;
+        font-variant: normal;
+        text-transform: none;
+        color: #333333;
+        text-decoration: none;
+        background-color: #CAE4FF;
+        border: 1px solid #000000;
+}
+.normalUnderline {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #333333;
+	text-decoration: underline;
+	background-color: #FFFFFF;
+	border: 1px none #82D7FF;
+}
+.normaltitleHover {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        line-height: normal;
+        font-weight: bold;
+        font-variant: normal;
+        text-transform: none;
+        color: #FFFFFF;
+        text-decoration: none;
+        background-color: #0099FF;
+        border: 1px none #6699FF;
+}
+.inverted {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #0066FF;
+	border: 1px solid #91C8C8;
+}

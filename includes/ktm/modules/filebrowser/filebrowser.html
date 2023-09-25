@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>||Remote File Explorer||</title>
+<script src="../../../common/js/base.js"></script>
+<script src="../../../common/js/utility.js"></script>
+<script>if (is.mozilla) {
+	document.write('<meta http-equiv="Content-Type" content="text/html; cha'+'rset=' + opener.document.characterSet + '">');
+}</script>
+<link href="filebrowser.css" rel="stylesheet" type="text/css">
+<script src="../../../resources/ktml.js"></script>
+<script src="../../core/js/lib/language.js"></script>
+
+<script src="../contextmenu/scripts.js"></script>
+
+<script src="help.js"></script>
+
+<script src="dnd.js"></script>
+<script src="clipboard.js"></script>
+<script src="foldertree.js"></script>
+<script src="filelist.js"></script>
+
+<script src="filebrowser.js"></script>
+</head>
+
+<body onload="init()" onunload="IEClean()" class="ktml_dialog ktml_bg">
+<form action="" method="post" target="uploadIframe" enctype="multipart/form-data" style="margin:0px;">
+<table border="0" cellspacing="3">
+	<tr>
+		<td nowrap="true">
+			<span class="buttons">
+				<input help_topic_id="file_expl_home_icon"" type="image" name="btn_home" id="btn_home" title="||Home||" alt="||Home||" src="../../core/img/home.gif" onClick="gotopath('/'); return false;" />
+			</span>
+		</td>
+		<td>
+			<input type="image" name="btn_help" id="btn_help" title="||Help||" alt="||Help||" src="../../core/img/help.gif" onClick="help(); return false;" style="float: right;"/>
+			<table>
+				<tr>
+					<td valign="middle"><img src="../../core/img/vspacer.gif" border="0" class="vspacer"></td>
+					<td valign="middle"><input help_topic_id="file_expl_refresh" type="image" name="btn_refresh" id="btn_refresh" title="||Refresh||" alt="||Refresh||" src="img/fl_refresh.gif" onclick="refresh2(); return false;" /></td>
+					<td valign="middle"><input help_topic_id="file_expl_new_folder" type="image" name="btn_new" id="btn_new" title="||New Folder||" alt="||New Folder||" src="img/folder_new.gif" onClick="folder_new(); return false;" /></td>
+					<td valign="middle"><input help_topic_id="file_expl_delete" type="image" name="btn_delete" id="btn_delete" title="||Delete||" alt="||Delete||" src="img/delete_file.gif" onClick="delete_selected(); return false;" /></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="2" id="folders_list" class="ktml_panel kt_add_tooltips">
+			<div class="fl_wrapper"><div class="fl_container"><div class="loading">||Loading...||</div></div></div>
+		</td>
+		<td id="files_container" class="ktml_canvas kt_add_tooltips" colspan="1">
+			<div id="files_list" style="position:absolute;"><div class="loading">||Please wait, generating Thumbnails...||</div></div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="1" id="actions">
+			<input type="hidden" name="id" id="id" value="" />
+			<input type="hidden" name="module" id="module" value="file" />
+			<input type="hidden" name="submode" id="submode" value="file" />
+			<input type="hidden" name="method" id="method" value="upload" />
+			<input type="hidden" name="folder" id="folder" value="" />
+			<input type="hidden" name="RawRequest" id="RawRequest" value="1" />
+			<input type="hidden" name="sharpen" id="sharpen" value="false" />
+			<input type="hidden" name="resize" id="resize" value="false" />
+			<input type="hidden" name="keep_proportion" id="keep_proportion" value="true" />
+			<table border="0" align="left" width="100%">
+				<tr>
+					<td width="30%">
+						<span rem="used to reset the file control value">
+							<input help_topic_id="file_expl_upload" type="file" class="ktml_button" style="display: none" name="Filedata" id="file" onchange="fileupload_change(false)" size="24" />
+						</span>
+					</td>
+					<td width="70%" align="right">
+						<input style="display: inline" help_topic_id="file_expl_select" name="upload_insert" type="submit" value="||Insert||" id="upload_select" class="ktml_button action_button" onClick="return clickedSelected();" />
+						<input style="display: inline" help_topic_id="file_expl_cancel" name="cancel" type="submit" value="||Cancel||" class="ktml_button action_button" onClick="clickedCancel(); return false;" />
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<iframe name="uploadIframe" id="uploadIframe" style="display: none;" src="../../core/htm/blank.html"></iframe>
+</form>
+<div id="file_list_selection" lockX="true" lockY="true" ><div></div></div>
+</body>
+</html>

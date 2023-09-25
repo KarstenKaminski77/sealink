@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>loading...</title>
+<link href="../../core/styles/popup.css" rel="stylesheet" type="text/css">
+<style>
+	#KAR{
+		position: relative;
+		top: -1px;	
+	}
+	input + label#KAR{
+		position: relative;
+		top: -4px;	
+	}
+	input[type="checkbox"]+label{
+		position: relative;
+		top: -3px;
+	}
+</style>
+<script src="../../../common/js/base.js"></script>
+<script src="../../../common/js/utility.js"></script>
+<script src="../../core/js/lib/language.js"></script>
+<script>
+var _file   = null;
+var _width  = null;
+var _height = null;
+keepResizeProportions = true;
+var canceling = true;
+
+_setModal = function() {
+	if (!window.dialogArguments) {
+		window.onbeforeunload = function() {
+			utility.window.hideModalBlocker(window.opener);
+			if (canceling) {
+				opener.resumeOperationts({dlgResult:false});
+			}
+		}
+	} else {
+		window.opener = dialogArguments;
+	}
+	if (window.opener.topOpener) {
+		window.topOpener = window.opener.topOpener;
+	} else {
+		window.topOpener = window.opener;
+	}
+	utility.dom.attachEvent(is.ie?window.document.body:window, 'keydown', function(e) {
+		var ret = utility.popup.escapeModal(e);
+		if (ret && e.keyCode == 27) {
+			utility.window.close();
+		}
+	});
+	utility.dom.attachEvent2(window.document.body, 'mousedown', utility.popup.removeModal);
+}
+
+_setUnselectable = function(el) {
+	if (is.ie) {
+		var allElements = document.body.all;
+		for(var i=0; i<allElements.length; i++){
+			if(allElements[i].tagName != "INPUT"){
+				allElements[i].unselectable = "On";
+				allElements[i].style.cursor = "default";
+			}else if(allElements[i].type == "text"){
+				allElements[i].style.cursor = "text";
+			}
+		}
+	} else {
+		var allChilds = utility.dom.getElementsByTagName(el,'*');
+		Array_each(allChilds, function(child){
+			var isHtmlEl = (child.nodeType == 1)? true: false;
+			if(/*isHtmlEl*/true){
+				var isInput   = ((child.nodeName.toLowerCase()=="input") && 
+				                 (child.getAttribute('type') && child.getAttribute('type').toLowerCase()=='text') ||
+				                 (child.getAttribute('type') && child.getAttribute('type').toLowerCase()=='password'))? true: false;
+				var isTxtArea = (child.nodeName.toLowerCase()=="textArea")? true: false;
+				if(!isInput && !isTxtArea ){
+					child.style.cursor = "default";
+					var hasHTMLChilds = utility.dom.getElementsByTagName(child, '*').length? true: false;
+					if(!hasHTMLChilds){
+						child.style.MozUserSelect = 'none';
+					}
+				} else{
+					child.style.cursor = "text";
+				};
+			};
+		});
+	}
+}
+
+function init() {
+	getvars = new QueryString();
+	_setModal();
+	translate = window.topOpener.translate;
+	ktml = window.topOpener.ktmls[getvars.find('counter')];
+	_setUnselectable(window.document.body);
+	_file = window.opener.selectedFile;
+	//setup window look & feel:
+	switch(window.purpose){
+		case "insert_thumbnail":
+			document.title = translate('Insert Thumbnail', ktml.config.UILanguage);
+			document.getElementById('clickApply').value = translate('Insert', ktml.config.UILanguage);
+			document.getElementById('rec').style.display = '';
+			break;
+		case "resize_image":
+			document.title = translate(_file? 'Resize Image': 'Resize Images', ktml.config.UILanguage);
+			document.getElementById('clickApply').value = translate('Apply', ktml.config.UILanguage);
+			document.getElementById('rec').style.display = '';
+			break;
+	};
+	
+	document.body.innerHTML = lang_translatepage(document.body.innerHTML, ktml.config.UILanguage, window.topOpener);
+	_width  = _file? _file.width:  '';
+	_height = _file? _file.height: '';
+	document.getElementById("resize_width").value = _width;
+	document.getElementById("resize_height").value = _height;
+	document.getElementById("resize_width").focus();
+	document.getElementById("resize_width").select();
+	updateLabels();
+}
+function window_keyHandler(e) {
+	if (e.keyCode == 13) {
+		image_resize();
+	}
+}
+function updateLabels(){
+	if(keepResizeProportions && !_file){
+		document.getElementById('w_label').innerHTML = translate("Box W", ktml.config.UILanguage) + ":";
+		document.getElementById('h_label').innerHTML = translate("Box H", ktml.config.UILanguage) + ":";
+	}else {
+		document.getElementById('w_label').innerHTML = translate("Width", ktml.config.UILanguage) + ":";
+		document.getElementById('h_label').innerHTML = translate("Height", ktml.config.UILanguage) + ":";
+	}	
+}
+function click_resize_constrain_proportions(btn) {
+	keepResizeProportions = btn.checked;
+	if(keepResizeProportions){
+		_width  = document.getElementById("resize_width").value;
+		_height = document.getElementById("resize_height").value;
+	}
+	document.getElementById("resize_width").select();
+	updateLabels();
+}
+function image_resize() {
+	var width = document.getElementById('resize_width').value;
+	var height = document.getElementById('resize_height').value;
+	if(!keepResizeProportions && (!width || !height)) {
+		window.setTimeout('window.close()', 1);
+		return;
+	} else if (keepResizeProportions && !width && !height) {
+		window.setTimeout('window.close()', 1);
+		return;
+	}
+	canceling = false;
+	document.getElementById('clickApply').disabled = "true";
+	document.getElementById('clickCancel').disabled = "true";
+	opener.resumeOperationts({dlgResult:true, width:width, height:height, keep_proportion:keepResizeProportions});
+	if(is.mozilla){
+		window.setInterval(function() {
+				if (opener.closeMe) {
+					opener.closeMe = false;
+					window.setTimeout('window.close()', 1);
+					
+				}
+			}, 100);
+	} else {
+		window.setTimeout('window.close()', 1);
+	}
+}
+function link_to_value(obj, name){
+	if(!keepResizeProportions || !_file){
+		return;
+	}
+	var value = obj.value;
+	if(name == 'w'){
+			var newH = Math.floor(value*_height/_width);
+			if(isNaN(newH)){ newH = 0; }
+			document.getElementById("resize_height").value = newH;
+	} else if(name == 'h'){
+			var newW = Math.floor(value*_width/_height);
+			if(isNaN(newW)){ newW = 0; }
+			document.getElementById("resize_width").value = newW;
+	}
+}
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body class="ktml_dialog ktml_bg" onkeydown="window_keyHandler(event)" onLoad="init()">
+<div id="rec" class="dom_modal_dialog_content" style="margin-top: 20px; margin-left: 15px; display: none">
+	<table width="100" border="0" cellpadding="2" cellspacing="2">
+		<tr>
+			<td id="w_label">||Width||:</td>
+			<td>
+				<input name="resize_width" 
+		  			id="resize_width"
+		  			type="text"
+		  			size="3"
+		  			class="ktml_input"
+		  			value=""
+		  			onkeyup="link_to_value(this,'w')"
+		  			 /></td>
+			<td rowspan="2">
+				<input 
+		  			id="keepProportions"
+					name="imageField" 
+					title="||Constrain proportions||" 
+					type="checkbox" checked="checked"
+					onclick="click_resize_constrain_proportions(this);"
+				/><label id="KAR" for="keepProportions">||Keep Aspect Ratio||</label>
+			</td>
+		</tr>
+		<tr>
+			<td id="h_label">||Height||:</td>
+			<td>
+				<input name="resize_height" 
+		  			id="resize_height"
+		  			type="text"
+		  			size="3"
+		  			class="ktml_input"
+		  			value=""
+		  			onkeyup="link_to_value(this,'h')"
+		  			 />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3" valign="bottom" align="right" style="text-align: center; height: 45px; vertical-align: bottom"><table border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td><input id="clickApply" class="actInputs" name="imageField2" type="button" value="||Apply||" onClick="image_resize()" /></td>
+                    <td><input id="clickCancel" class="actInputs" style="margin-right: 0px" name="imageField3" type="button" value="||Cancel||" onClick="window.setTimeout('window.close()', 1);" /></td>
+                  </tr>
+                </table>
+		  </td>
+		</tr>
+  </table>
+</div>
+</body>
+</html>

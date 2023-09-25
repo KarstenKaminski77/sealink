@@ -1,0 +1,124 @@
+<style type="text/css">
+body{
+    text-align: center;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+h1{
+  color: #396;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+}
+
+#clockdiv{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 14px;
+}
+
+#clockdiv > div{
+	padding: 5px;
+	border-radius: 3px;
+	display: inline-block;
+	background-color: #619EDC;
+}
+
+#clockdiv div > span{
+	padding: 8px;
+	border-radius: 3px;
+	display: inline-block;
+	background-color: #19446f;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 12px;
+}
+</style>
+
+<body>
+
+<h1>Countdown Clock</h1>
+<div id="clockdiv">
+  <div>
+    <span class="days">62</span>
+    <div class="smalltext">Days</div>
+  </div>
+  <div>
+    <span class="hours">11</span>
+    <div class="smalltext">Hours</div>
+  </div>
+  <div>
+    <span class="minutes">40</span>
+    <div class="smalltext">Min</div>
+  </div>
+  <div>
+    <span class="seconds">37</span>
+    <div class="smalltext">Sec</div>
+  </div>
+</div>
+<script src="//assets.codepen.io/assets/common/stopExecutionOnTimeout-f961f59a28ef4fd551736b43f94620b5.js"></script>
+
+    
+<script>
+      function getTimeRemaining(endtime){
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor( (t/1000) % 60 );
+  var minutes = Math.floor( (t/1000/60) % 60 );
+  var hours = Math.floor( (t/(1000*60*60)) % 24 );
+  var days = Math.floor( t/(1000*60*60*24) );
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function initializeClock(id, endtime){
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock(){
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if(t.total<=0){
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock,1000);
+}
+
+var deadline = 'December 31 2015 00:00:50 UTC+0200';
+initializeClock('clockdiv', deadline);
+      //@ sourceURL=pen.js
+    </script>
+
+    
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+    
+  
+
+ 
+</body>

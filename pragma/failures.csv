@@ -1,0 +1,591 @@
+Code,Description,CompCode,CompDescr,Code,Description
+BLD_ANCY,Ancillary,EQ001,Graffiti Re-painting Set,PR6000,Painting maintenance required
+BLD_ANCY,Ancillary,EQ002,Painting,PR6000,Painting maintenance required
+BLD_ANCY,Ancillary,EQ003,Pest Control,PR6001,Pest control / elimination required
+BLD_ANCY,Ancillary,EQ443,Fuel Spill Absorbant Material,PR6487,Used absorbant material removal required
+BLD_ANCY,Ancillary,EQ444,Drinking Water Well,PR6488,Test well drinking water sampling test required
+BLD_ANCY,Ancillary,EQ444,Drinking Water Well,PR6490,Test well pump faulty
+BLD_CAN,Canopy,EQ005,Canopy,PR6003,Major structural damage (HSSE Hazard)
+BLD_CAN,Canopy,EQ007,Canopy Ceiling,PR6003,Major structural damage (HSSE Hazard)
+BLD_CAN,Canopy,EQ008,Canopy Roof,PR6003,Major structural damage (HSSE Hazard)
+BLD_CAN,Canopy,EQ010,Canopy Stanchion,PR6003,Major structural damage (HSSE Hazard)
+BLD_CAN,Canopy,EQ013,HGV Canopy,PR6003,Major structural damage (HSSE Hazard)
+BLD_CAN,Canopy,EQ014,HGV Canopy Ceiling,PR6003,Major structural damage (HSSE Hazard)
+BLD_CAN,Canopy,EQ015,HGV Canopy Roof,PR6003,Major structural damage (HSSE Hazard)
+BLD_CAN,Canopy,EQ016,HGV Canopy Stanchion,PR6003,Major structural damage (HSSE Hazard)
+BLD_CAN,Canopy,EQ005,Canopy,PR6004,Minor structural damage
+BLD_CAN,Canopy,EQ007,Canopy Ceiling,PR6004,Minor structural damage
+BLD_CAN,Canopy,EQ008,Canopy Roof,PR6004,Minor structural damage
+BLD_CAN,Canopy,EQ010,Canopy Stanchion,PR6004,Minor structural damage
+BLD_CAN,Canopy,EQ013,HGV Canopy,PR6004,Minor structural damage
+BLD_CAN,Canopy,EQ014,HGV Canopy Ceiling,PR6004,Minor structural damage
+BLD_CAN,Canopy,EQ015,HGV Canopy Roof,PR6004,Minor structural damage
+BLD_CAN,Canopy,EQ016,HGV Canopy Stanchion,PR6004,Minor structural damage
+BLD_CAN,Canopy,EQ008,Canopy Roof,PR6045,Major roof leak (HSSE Hazard)
+BLD_CAN,Canopy,EQ008,Canopy Roof,PR6046,Minor roof leak
+BLD_CAN,Canopy,EQ005,Canopy,PR6481,Clear debris from canopy roof
+BLD_CAN,Canopy,EQ008,Canopy Roof,PR6481,Clear debris from canopy roof
+BLD_CAR,Carwash Building,EQ017,Carwash Bay Heaters,PR6006,Bay heaters (frost protection system) faulty
+BLD_CAR,Carwash Building,EQ017,Carwash Bay Heaters,PR6007,Bay heaters (frost protection system) totally inoperative (winter)
+BLD_CAR,Carwash Building,EQ018,Carwash Building,PR6008,Cabinet damaged
+BLD_CAR,Carwash Building,EQ019,Carwash Floor,PR6009,Floor surfaces cracked or damaged
+BLD_CAR,Carwash Building,EQ020,Carwash Floor Leak Tight Surface,PR6010,Leak proof surfaces cracked or damaged
+BLD_CAR,Carwash Building,EQ021,Carwash Floor Tiles,PR6011,Floor tiles damaged or missing
+BLD_CAR,Carwash Building,EQ022,Carwash Wall,PR6012,Walls cracked or damaged
+BLD_CAR,Carwash Building,EQ024,Washbox / Jetwash Building,PR6014,Jet wash bays or screens damaged
+BLD_CAR,Carwash Building,EQ023,Carwash Wall Tiles,PR6051,Wall tiles damaged or missing
+BLD_DOM,Restroom,EQ030,Restroom building Floor,PR6009,Floor surfaces cracked or damaged
+BLD_DOM,Restroom,EQ031,Restroom building Floor Tiles,PR6011,Floor tiles damaged or missing
+BLD_DOM,Restroom,EQ032,Restroom building Wall,PR6012,Walls cracked or damaged
+BLD_DOM,Restroom,EQ028,Restroom,PR6016,General maintenance or damage
+BLD_DOM,Restroom,EQ029,Restroom building Ceiling,PR6017,Ceiling leaking or damaged
+BLD_DOM,Restroom,EQ033,Restroom building Wall Tiles,PR6051,Wall tiles damaged or missing
+BLD_DOM,Restroom,EQ028,Restroom,PR6461,Restroom Disabled Persons Rail Damaged
+BLD_DOOR,Doors,EQ036,External Security Door,PR6018,Door faulty or damaged
+BLD_DOOR,Doors,EQ037,Internal General Door,PR6018,Door faulty or damaged
+BLD_DOOR,Doors,EQ038,Internal Security Doors,PR6018,Door faulty or damaged
+BLD_DOOR,Doors,EQ040,Shop Automatic Doors,PR6018,Door faulty or damaged
+BLD_DOOR,Doors,EQ041,Shop Entrance Sliding / Normal Doors,PR6018,Door faulty or damaged
+BLD_DOOR,Doors,EQ042,Workshop Main Doors,PR6018,Door faulty or damaged
+BLD_DOOR,Doors,EQ043,Workshop Roller Doors,PR6018,Door faulty or damaged
+BLD_DOOR,Doors,EQ034,Carwash Automatic Door Controls,PR6019,Automatic door motor faulty
+BLD_DOOR,Doors,EQ039,Shop Automatic Door Controls,PR6019,Automatic door motor faulty
+BLD_DOOR,Doors,EQ040,Shop Automatic Doors,PR6020,Glass broken (HSSE Hazard)
+BLD_DOOR,Doors,EQ041,Shop Entrance Sliding / Normal Doors,PR6020,Glass broken (HSSE Hazard)
+BLD_DOOR,Doors,EQ040,Shop Automatic Doors,PR6021,Glass cracked
+BLD_DOOR,Doors,EQ041,Shop Entrance Sliding / Normal Doors,PR6021,Glass cracked
+BLD_DOOR,Doors,EQ035,Carwash Main Doors,PR6022,Car wash entry / exit door faulty or damaged
+BLD_DOOR,Doors,EQ449,Restroom Automatic Door Controls (Disabled Persons),PR6485,Restroom disabled persons pushbutton door control faulty
+BLD_PLUM,Plumbing,EQ050,Water Softener,PR6024,Water softener unit faulty
+BLD_PLUM,Plumbing,EQ046,General Pipework and Fittings,PR6025,Air unit compressed air pipe-work damaged
+BLD_PLUM,Plumbing,EQ046,General Pipework and Fittings,PR6026,Water leaks (pipework or drainage systems)
+BLD_PLUM,Plumbing,EQ046,General Pipework and Fittings,PR6027,Water supply blocked or faulty (no water)
+BLD_PLUM,Plumbing,EQ046,General Pipework and Fittings,PR6028,"Bad smell, unknown source"
+BLD_PLUM,Plumbing,EQ046,General Pipework and Fittings,PR6029,Clean /Soapy water unit not operational
+BLD_PLUM,Plumbing,EQ046,General Pipework and Fittings,PR6030,Leaking taps or fittings (water)
+BLD_PLUM,Plumbing,EQ046,General Pipework and Fittings,PR6031,Major leak: burst pipe-work / flood
+BLD_PLUM,Plumbing,EQ046,General Pipework and Fittings,PR6032,Minor leaks or pipe-work repairs
+BLD_PLUM,Plumbing,EQ046,General Pipework and Fittings,PR6033,No hot water
+BLD_PLUM,Plumbing,EQ046,General Pipework and Fittings,PR6034,No water / low pressure at sink / toilet / urinal
+BLD_PLUM,Plumbing,EQ046,General Pipework and Fittings,PR6035,Toilet / urinal blocked
+BLD_PLUM,Plumbing,EQ046,General Pipework and Fittings,PR6036,Water not draining away - one drain blocked
+BLD_PLUM,Plumbing,EQ046,General Pipework and Fittings,PR6037,Water not draining away - several drains blocked
+BLD_PLUM,Plumbing,EQ047,Showers,PR6038,Shower units faulty or damaged
+BLD_PLUM,Plumbing,EQ048,Sinks and Basins,PR6039,Sink or basin broken
+BLD_PLUM,Plumbing,EQ049,Toilets and Sanitary ware,PR6040,Sanitary equipment faulty / damaged
+BLD_PLUM,Plumbing,EQ049,Toilets and Sanitary ware,PR6041,Toilet / urinal broken
+BLD_PLUM,Plumbing,EQ049,Toilets and Sanitary ware,PR6042,Toilet / urinal cistern faulty or damaged
+BLD_PLUM,Plumbing,EQ049,Toilets and Sanitary ware,PR6043,Toilet / urinal seats damaged or missing
+BLD_PLUM,Plumbing,EQ046,General Pipework and Fittings,PR6462,Restroom piping insulation damaged
+BLD_PLUM,Plumbing,EQ046,General Pipework and Fittings,PR6463,Combined air / water unit no water supply
+BLD_PLUM,Plumbing,EQ046,General Pipework and Fittings,PR6489,Test well piping damaged
+BLD_PLUM,Plumbing,EQ046,General Pipework and Fittings,PR8010,Geyser making noise/vibrating
+BLD_ROOF,Roof,EQ052,Car Wash Building Roof,PR6003,Major structural damage (HSSE Hazard)
+BLD_ROOF,Roof,EQ053,External Storage Building Roof,PR6003,Major structural damage (HSSE Hazard)
+BLD_ROOF,Roof,EQ056,Restroom Building Roof,PR6003,Major structural damage (HSSE Hazard)
+BLD_ROOF,Roof,EQ057,Shop / Sales Building Roof,PR6003,Major structural damage (HSSE Hazard)
+BLD_ROOF,Roof,EQ058,Workshop Building Roof,PR6003,Major structural damage (HSSE Hazard)
+BLD_ROOF,Roof,EQ051,Building Ceilings,PR6004,Minor structural damage
+BLD_ROOF,Roof,EQ052,Car Wash Building Roof,PR6004,Minor structural damage
+BLD_ROOF,Roof,EQ053,External Storage Building Roof,PR6004,Minor structural damage
+BLD_ROOF,Roof,EQ056,Restroom Building Roof,PR6004,Minor structural damage
+BLD_ROOF,Roof,EQ057,Shop / Sales Building Roof,PR6004,Minor structural damage
+BLD_ROOF,Roof,EQ058,Workshop Building Roof,PR6004,Minor structural damage
+BLD_ROOF,Roof,EQ055,Guttering and downpipes,PR6044,Roof guttering / downpipes blocked or damaged
+BLD_ROOF,Roof,EQ052,Car Wash Building Roof,PR6045,Major roof leak (HSSE Hazard)
+BLD_ROOF,Roof,EQ053,External Storage Building Roof,PR6045,Major roof leak (HSSE Hazard)
+BLD_ROOF,Roof,EQ056,Restroom Building Roof,PR6045,Major roof leak (HSSE Hazard)
+BLD_ROOF,Roof,EQ057,Shop / Sales Building Roof,PR6045,Major roof leak (HSSE Hazard)
+BLD_ROOF,Roof,EQ058,Workshop Building Roof,PR6045,Major roof leak (HSSE Hazard)
+BLD_ROOF,Roof,EQ052,Car Wash Building Roof,PR6046,Minor roof leak
+BLD_ROOF,Roof,EQ053,External Storage Building Roof,PR6046,Minor roof leak
+BLD_ROOF,Roof,EQ056,Restroom Building Roof,PR6046,Minor roof leak
+BLD_ROOF,Roof,EQ057,Shop / Sales Building Roof,PR6046,Minor roof leak
+BLD_ROOF,Roof,EQ058,Workshop Building Roof,PR6046,Minor roof leak
+BLD_ROOF,Roof,EQ054,Fall Arrest system,PR6047,Fall arrest (roof) connection system faulty or damaged
+BLD_SHOP,Shop / Sales Building,EQ059,Shop / Sales Building,PR6003,Major structural damage (HSSE Hazard)
+BLD_SHOP,Shop / Sales Building,EQ059,Shop / Sales Building,PR6004,Minor structural damage
+BLD_SHOP,Shop / Sales Building,EQ061,Shop Floor,PR6009,Floor surfaces cracked or damaged
+BLD_SHOP,Shop / Sales Building,EQ062,Shop Floor Tiles,PR6011,Floor tiles damaged or missing
+BLD_SHOP,Shop / Sales Building,EQ064,Shop Wall,PR6012,Walls cracked or damaged
+BLD_SHOP,Shop / Sales Building,EQ059,Shop / Sales Building,PR6048,Steel structures damaged
+BLD_SHOP,Shop / Sales Building,EQ060,Shop Fittings and Fixtures,PR6049,Shop fittings or fixtures faulty or damaged
+BLD_SHOP,Shop / Sales Building,EQ063,Shop Suspended Ceiling,PR6050,Ceiling tiles or fittings damaged / broken
+BLD_SHOP,Shop / Sales Building,EQ065,Shop Wall Tiles,PR6051,Wall tiles damaged or missing
+BLD_STOR,External Storage building,EQ068,External Storage building Floor,PR6009,Floor surfaces cracked or damaged
+BLD_STOR,External Storage building,EQ069,External Storage building Wall,PR6012,Walls cracked or damaged
+BLD_STOR,External Storage building,EQ067,External Storage building Ceiling,PR6046,Minor roof leak
+BLD_STOR,External Storage building,EQ066,External Storage building,PR6052,Storage building damaged
+BLD_WIND,Windows,EQ070,General Windows,PR6020,Glass broken (HSSE Hazard)
+BLD_WIND,Windows,EQ071,Shop Front Windows,PR6020,Glass broken (HSSE Hazard)
+BLD_WIND,Windows,EQ070,General Windows,PR6021,Glass cracked
+BLD_WIND,Windows,EQ071,Shop Front Windows,PR6021,Glass cracked
+BLD_WIND,Windows,EQ070,General Windows,PR6053,Windows general fault
+BLD_WIND,Windows,EQ071,Shop Front Windows,PR6053,Windows general fault
+BLD_WKSP,Workshop Building,EQ072,Workshop,PR6003,Major structural damage (HSSE Hazard)
+BLD_WKSP,Workshop Building,EQ072,Workshop,PR6004,Minor structural damage
+BLD_WKSP,Workshop Building,EQ074,Workshop Building Floor,PR6009,Floor surfaces cracked or damaged
+BLD_WKSP,Workshop Building,EQ076,Workshop Floor Leak Tight Surface,PR6010,Leak proof surfaces cracked or damaged
+BLD_WKSP,Workshop Building,EQ075,Workshop Building Wall,PR6012,Walls cracked or damaged
+BLD_WKSP,Workshop Building,EQ073,Workshop Building Ceiling,PR6017,Ceiling leaking or damaged
+BLD_WKSP,Workshop Building,EQ072,Workshop,PR6048,Steel structures damaged
+CON_COM,Communications Systems,EQ097,Intercom system (PA),PR6085,"PA Announcement system faulty (Attendant position or Forecourt ""call"" button)"
+CON_COM,Communications Systems,EQ097,Intercom system (PA),PR6091,Dispenser island intercom system (PA) faulty or damaged
+CON_FCC,Forecourt Controller System,EQ100,Forecourt Controller System,PR6092,Unable to authorise all dispensers from POS Console
+CON_FCC,Forecourt Controller System,EQ100,Forecourt Controller System,PR6110,Unable to authorise a dispenser from POS Console
+DRN_CW,Clean Water Drainage,EQ123,Clean Water Drainage,PR6131,One drain blocked
+DRN_CW,Clean Water Drainage,EQ123,Clean Water Drainage,PR6132,Several drains blocked : major flooding
+DRN_CW,Clean Water Drainage,EQ123,Clean Water Drainage,PR6133,Several drains blocked : minor flooding
+DRN_CW,Clean Water Drainage,EQ124,Clean Water Drainage Grate Cover,PR6134,Drainage grates missing or damaged
+DRN_ETP,Effluent Treatment Plant,EQ125,Effluent Treatment Plant,PR6135,Effluent (sewerage) treatment plant faulty or damaged
+DRN_FW,Foul Water Drainage,EQ126,Foul Water Drainage,PR6132,Several drains blocked : major flooding
+DRN_FW,Foul Water Drainage,EQ126,Foul Water Drainage,PR6133,Several drains blocked : minor flooding
+DRN_FW,Foul Water Drainage,EQ126,Foul Water Drainage,PR6136,Sewerage piping cracked or damaged
+DRN_FW,Foul Water Drainage,EQ127,Foul Water Drainage Grate Cover,PR6137,Sewer grates or covers damaged or missing
+DRN_INCP,Interceptors,EQ128,Interceptors,PR6138,Oil interceptor basket / plate / cover missing or broken
+DRN_INCP,Interceptors,EQ128,Interceptors,PR6139,"Oil interceptor blocked, damaged or faulty"
+DRN_PMP,Pumping Station,EQ131,Pumping Station,PR6142,Drainage pump faulty
+DRN_PRES,Sewage Displacement. Pressure system,EQ132,Sewage Displacement. Pressure system,PR6143,Sewerage displacement system fault
+DRN_PUMP,Sewerage Displacement Pump,EQ133,Sewage Displacement. Pressure Pump,PR6144,Sewerage pump faulty or damaged
+DRN_SEPT,Septic Tank,EQ134,Septic Tank,PR6145,"Septic tank full, blocked or inoperative"
+DRN_SEPT,Septic Tank,EQ134,Septic Tank,PR6146,Septic tank or cover damaged
+DRN_SEPT,Septic Tank,EQ134,Septic Tank,PR6147,Septic tank overflowing
+DRN_SLUD,Sludge Trap,EQ135,Sludge Trap,PR6148,Sludge trap blocked / micro switch operated
+ELC_DIST,Distribution Systems,EQ141,Fuel System Power Supplies,PR6062,Electrical fault / power failure
+ELC_DIST,Distribution Systems,EQ142,General Power Outlets,PR6062,Electrical fault / power failure
+ELC_DIST,Distribution Systems,EQ143,POS / BOS System Power Supplies,PR6062,Electrical fault / power failure
+ELC_DIST,Distribution Systems,EQ145,Site Electrical Distribution Board,PR6062,Electrical fault / power failure
+ELC_DIST,Distribution Systems,EQ146,Site Power Supplies,PR6062,Electrical fault / power failure
+ELC_DIST,Distribution Systems,EQ137,Car Wash Building Power Supplies,PR6150,General electrical : major fault
+ELC_DIST,Distribution Systems,EQ144,Shop / Sales Building Power Supplies,PR6150,General electrical : major fault
+ELC_DIST,Distribution Systems,EQ146,Site Power Supplies,PR6150,General electrical : major fault
+ELC_DIST,Distribution Systems,EQ147,Workshop Building Power Supplies,PR6150,General electrical : major fault
+ELC_DIST,Distribution Systems,EQ137,Car Wash Building Power Supplies,PR6151,General electrical : minor fault
+ELC_DIST,Distribution Systems,EQ144,Shop / Sales Building Power Supplies,PR6151,General electrical : minor fault
+ELC_DIST,Distribution Systems,EQ146,Site Power Supplies,PR6151,General electrical : minor fault
+ELC_DIST,Distribution Systems,EQ147,Workshop Building Power Supplies,PR6151,General electrical : minor fault
+ELC_DIST,Distribution Systems,EQ137,Car Wash Building Power Supplies,PR6152,No power available
+ELC_DIST,Distribution Systems,EQ138,Car Wash System Power Supplies,PR6152,No power available
+ELC_DIST,Distribution Systems,EQ139,Forecourt Power Supplies,PR6152,No power available
+ELC_DIST,Distribution Systems,EQ140,Fridge and Freezer Power Supplies,PR6152,No power available
+ELC_DIST,Distribution Systems,EQ141,Fuel System Power Supplies,PR6152,No power available
+ELC_DIST,Distribution Systems,EQ143,POS / BOS System Power Supplies,PR6152,No power available
+ELC_DIST,Distribution Systems,EQ144,Shop / Sales Building Power Supplies,PR6152,No power available
+ELC_DIST,Distribution Systems,EQ147,Workshop Building Power Supplies,PR6152,No power available
+ELC_DIST,Distribution Systems,EQ137,Car Wash Building Power Supplies,PR6153,Power surge trip activated / fuses blown
+ELC_DIST,Distribution Systems,EQ138,Car Wash System Power Supplies,PR6153,Power surge trip activated / fuses blown
+ELC_DIST,Distribution Systems,EQ139,Forecourt Power Supplies,PR6153,Power surge trip activated / fuses blown
+ELC_DIST,Distribution Systems,EQ140,Fridge and Freezer Power Supplies,PR6153,Power surge trip activated / fuses blown
+ELC_DIST,Distribution Systems,EQ141,Fuel System Power Supplies,PR6153,Power surge trip activated / fuses blown
+ELC_DIST,Distribution Systems,EQ143,POS / BOS System Power Supplies,PR6153,Power surge trip activated / fuses blown
+ELC_DIST,Distribution Systems,EQ144,Shop / Sales Building Power Supplies,PR6153,Power surge trip activated / fuses blown
+ELC_DIST,Distribution Systems,EQ147,Workshop Building Power Supplies,PR6153,Power surge trip activated / fuses blown
+ELC_DIST,Distribution Systems,EQ142,General Power Outlets,PR6154,Light switch / socket damaged or faulty
+ELC_DIST,Distribution Systems,EQ142,General Power Outlets,PR6155,Power sockets damaged or faulty
+ELC_DIST,Distribution Systems,EQ145,Site Electrical Distribution Board,PR6156,Electrical distribution board / door damaged
+ELC_DIST,Distribution Systems,EQ145,Site Electrical Distribution Board,PR6157,Electrical distribution board damaged (HSSE hazard)
+ELC_DIST,Distribution Systems,EQ145,Site Electrical Distribution Board,PR6158,Emergency power shutdown (isolation) switch activated or faulty
+ELC_DIST,Distribution Systems,EQ145,Site Electrical Distribution Board,PR6159,Surge protection system faulty
+ELC_DIST,Distribution Systems,EQ146,Site Power Supplies,PR6160,Total loss of power to site
+ELC_DIST,Distribution Systems,EQ145,Site Electrical Distribution Board,PR6491,Blanks in distribution board require replacing
+ELC_DUCT,Ductwork,EQ148,"Cable Systems, Trunking and Tray",PR6161,Electrical Ductwork / Cabling exposed or hanging (HSSE hazard)
+ELC_DUCT,Ductwork,EQ148,"Cable Systems, Trunking and Tray",PR6162,Electrical wiring / cables damaged or loose
+ELC_ERTH,Earthing Systems,EQ149,Earthing Systems,PR6163,Earth system / cabling damaged or faulty
+ELC_ERTH,Earthing Systems,EQ149,Earthing Systems,PR6164,Earth system fault alarm activated
+ELC_LASP,Lightning and Surge Protection,*514838,Lightning and Surge Protection,PR6150,General electrical : major fault
+ELC_LASP,Lightning and Surge Protection,*514838,Lightning and Surge Protection,PR6151,General electrical : minor fault
+ELC_LASP,Lightning and Surge Protection,*514838,Lightning and Surge Protection,PR6159,Surge protection system faulty
+ELC_LGHT,Lighting Systems,EQ154,Canopy Soffit Lighting,PR6004,Minor structural damage
+ELC_LGHT,Lighting Systems,EQ151,Automatic Lighting Systems,PR6062,Electrical fault / power failure
+ELC_LGHT,Lighting Systems,EQ174,Shop Display Freezer Electrical / Lighting Systems,PR6062,Electrical fault / power failure
+ELC_LGHT,Lighting Systems,EQ175,Shop Display Fridge Electrical / Lighting Systems,PR6062,Electrical fault / power failure
+ELC_LGHT,Lighting Systems,EQ176,Shop Pod Sign Electrical / Lighting Unit,PR6062,Electrical fault / power failure
+ELC_LGHT,Lighting Systems,EQ177,Shop Portico Sign Electrical / Lighting Unit,PR6062,Electrical fault / power failure
+ELC_LGHT,Lighting Systems,EQ178,Shop Product / Advertising Electrical / Lighting Unit,PR6062,Electrical fault / power failure
+ELC_LGHT,Lighting Systems,EQ179,Site Entrance / Direction Sign Electrical / Lighting Unit,PR6062,Electrical fault / power failure
+ELC_LGHT,Lighting Systems,EQ180,Site Name Sign Electrical / Lighting Unit,PR6062,Electrical fault / power failure
+ELC_LGHT,Lighting Systems,EQ181,Slim Line (Low Level Price) Sign Electrical / Lighting Unit,PR6062,Electrical fault / power failure
+ELC_LGHT,Lighting Systems,EQ182,Snack / Food Display  Sign Electrical / Lighting Unit,PR6062,Electrical fault / power failure
+ELC_LGHT,Lighting Systems,EQ183,Spreaderbox Sign Electrical / Lighting Unit,PR6062,Electrical fault / power failure
+ELC_LGHT,Lighting Systems,EQ184,Stanchion Mounted Spreaderbox Electrical / Lighting Unit,PR6062,Electrical fault / power failure
+ELC_LGHT,Lighting Systems,EQ185,Tanker Discharge Area Electrical / Lighting Unit,PR6062,Electrical fault / power failure
+ELC_LGHT,Lighting Systems,EQ186,Utility / Storeroom Freezer Electrical / Lighting Systems,PR6062,Electrical fault / power failure
+ELC_LGHT,Lighting Systems,EQ187,Utility / Storeroom Fridge Electrical / Lighting Systems,PR6062,Electrical fault / power failure
+ELC_LGHT,Lighting Systems,EQ151,Automatic Lighting Systems,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ152,Canopy Fascia Electrical / Lighting Unit,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ153,Canopy Lighting,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ154,Canopy Soffit Lighting,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ155,Car Wash Building Lighting,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ156,Car Wash Directional Sign Electrical / Lighting Unit,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ157,Car Wash Instruction Sign Electrical / Lighting Unit,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ158,Car Wash Menu Sign Electrical / Lighting Unit,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ159,Dispenser Mounted Spreaderbox Electrical / Lighting Unit,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ160,External Security Lighting,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ161,External Storeroom Lighting,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ162,Flag Sign Electrical / Lighting Unit,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ163,Forecourt Traffic Direction Sign Electrical / Lighting Unit,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ164,Information Sign Electrical / Lighting Unit,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ165,Internal Lighting,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ166,Monolith Electrical / Lighting Unit,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ167,Motorway Price Sign Electrical / Lighting Unit,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ168,Pole Sign Electrical / Lighting Unit,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ169,Poster Sign Electrical / Lighting Unit,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ170,Pylon Sign Electrical / Lighting Unit,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ171,Restaurant Menu-Board Electrical / Lighting Unit,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ172,Restroom Building Lighting,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ173,Shop / Sales Building Lighting,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ174,Shop Display Freezer Electrical / Lighting Systems,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ175,Shop Display Fridge Electrical / Lighting Systems,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ176,Shop Pod Sign Electrical / Lighting Unit,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ177,Shop Portico Sign Electrical / Lighting Unit,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ178,Shop Product / Advertising Electrical / Lighting Unit,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ179,Site Entrance / Direction Sign Electrical / Lighting Unit,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ180,Site Name Sign Electrical / Lighting Unit,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ181,Slim Line (Low Level Price) Sign Electrical / Lighting Unit,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ182,Snack / Food Display  Sign Electrical / Lighting Unit,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ183,Spreaderbox Sign Electrical / Lighting Unit,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ184,Stanchion Mounted Spreaderbox Electrical / Lighting Unit,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ185,Tanker Discharge Area Electrical / Lighting Unit,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ186,Utility / Storeroom Freezer Electrical / Lighting Systems,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ187,Utility / Storeroom Fridge Electrical / Lighting Systems,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ188,Workshop Building Lighting,PR6166,Lighting fault
+ELC_LGHT,Lighting Systems,EQ154,Canopy Soffit Lighting,PR6167,Less than 50% of canopy lights faulty
+ELC_LGHT,Lighting Systems,EQ154,Canopy Soffit Lighting,PR6168,More than 50% of ceiling lights faulty
+ELC_LGHT,Lighting Systems,EQ151,Automatic Lighting Systems,PR6169,Automatic lighting systems faulty
+ELC_PWR,Power Supplies,EQ189,Electrical Transformers,PR6170,Site power transformer faulty
+ELC_PWR,Power Supplies,EQ190,Power Generator,PR6171,Site power generator faulty
+ELC_UPS,Uninterruptible power supply,EQ193,Site Main Uninterruptible Power Supply,PR6172,UPS faulty
+ELC_UPS,Uninterruptible power supply,EQ194,Voltage Regulator / Line Conditioner,PR6173,Voltage regulator faulty
+FCT_BOUN,Boundary,EQ197,Boundary Fence,PR6003,Major structural damage (HSSE Hazard)
+FCT_BOUN,Boundary,EQ198,Boundary Walls,PR6003,Major structural damage (HSSE Hazard)
+FCT_BOUN,Boundary,EQ199,Crash Barrier,PR6003,Major structural damage (HSSE Hazard)
+FCT_BOUN,Boundary,EQ197,Boundary Fence,PR6004,Minor structural damage
+FCT_BOUN,Boundary,EQ198,Boundary Walls,PR6004,Minor structural damage
+FCT_BOUN,Boundary,EQ199,Crash Barrier,PR6004,Minor structural damage
+FCT_BOUN,Boundary,EQ198,Boundary Walls,PR6012,Walls cracked or damaged
+FCT_BOUN,Boundary,EQ197,Boundary Fence,PR6175,Fences damaged
+FCT_BOUN,Boundary,EQ199,Crash Barrier,PR6176,Crash barrier damaged
+FCT_DISC,Tanker Discharge Area,EQ200,Leak Tight Tanker Discharge Area,PR6003,Major structural damage (HSSE Hazard)
+FCT_DISC,Tanker Discharge Area,EQ201,Tanker Discharge Area,PR6003,Major structural damage (HSSE Hazard)
+FCT_DISC,Tanker Discharge Area,EQ200,Leak Tight Tanker Discharge Area,PR6004,Minor structural damage
+FCT_DISC,Tanker Discharge Area,EQ201,Tanker Discharge Area,PR6004,Minor structural damage
+FCT_DISC,Tanker Discharge Area,EQ200,Leak Tight Tanker Discharge Area,PR6010,Leak proof surfaces cracked or damaged
+FCT_DISC,Tanker Discharge Area,EQ201,Tanker Discharge Area,PR6177,Road surfaces cracked or damaged
+FCT_FILL,Vehicle Refuelling Area,EQ203,Leak Tight Vehicle Refuelling Area,PR6003,Major structural damage (HSSE Hazard)
+FCT_FILL,Vehicle Refuelling Area,EQ204,Vehicle Refuelling Area,PR6003,Major structural damage (HSSE Hazard)
+FCT_FILL,Vehicle Refuelling Area,EQ203,Leak Tight Vehicle Refuelling Area,PR6004,Minor structural damage
+FCT_FILL,Vehicle Refuelling Area,EQ204,Vehicle Refuelling Area,PR6004,Minor structural damage
+FCT_FILL,Vehicle Refuelling Area,EQ203,Leak Tight Vehicle Refuelling Area,PR6010,Leak proof surfaces cracked or damaged
+FCT_FILL,Vehicle Refuelling Area,EQ204,Vehicle Refuelling Area,PR6177,Road surfaces cracked or damaged
+FCT_FILL,Vehicle Refuelling Area,EQ202,Dispenser Island,PR6178,Dispenser island plinth or pump mounts damaged : major works
+FCT_FILL,Vehicle Refuelling Area,EQ202,Dispenser Island,PR6179,Dispenser island plinth or pump mounts damaged : minor works
+FCT_HGV,Truck Lanes,EQ205,HGV Lanes,PR6003,Major structural damage (HSSE Hazard)
+FCT_HGV,Truck Lanes,EQ206,Leak Tight HGV Lanes,PR6003,Major structural damage (HSSE Hazard)
+FCT_HGV,Truck Lanes,EQ205,HGV Lanes,PR6004,Minor structural damage
+FCT_HGV,Truck Lanes,EQ206,Leak Tight HGV Lanes,PR6004,Minor structural damage
+FCT_HGV,Truck Lanes,EQ206,Leak Tight HGV Lanes,PR6010,Leak proof surfaces cracked or damaged
+FCT_HGV,Truck Lanes,EQ205,HGV Lanes,PR6177,Road surfaces cracked or damaged
+FCT_KERB,Kerbing,EQ207,Kerbing,PR6003,Major structural damage (HSSE Hazard)
+FCT_KERB,Kerbing,EQ207,Kerbing,PR6004,Minor structural damage
+FCT_KERB,Kerbing,EQ207,Kerbing,PR6180,Kerbing damaged
+FCT_LAND,Landscaping,EQ208,Landscaping,PR6003,Major structural damage (HSSE Hazard)
+FCT_LAND,Landscaping,EQ208,Landscaping,PR6004,Minor structural damage
+FCT_LAND,Landscaping,EQ208,Landscaping,PR6181,Landscaping maintenance required
+FCT_PARK,Car Parking Area,EQ210,Car Parking Area,PR6003,Major structural damage (HSSE Hazard)
+FCT_PARK,Car Parking Area,EQ211,Car Parking Area Canopy,PR6003,Major structural damage (HSSE Hazard)
+FCT_PARK,Car Parking Area,EQ212,Security Lighting Columns,PR6003,Major structural damage (HSSE Hazard)
+FCT_PARK,Car Parking Area,EQ210,Car Parking Area,PR6004,Minor structural damage
+FCT_PARK,Car Parking Area,EQ211,Car Parking Area Canopy,PR6004,Minor structural damage
+FCT_PARK,Car Parking Area,EQ212,Security Lighting Columns,PR6004,Minor structural damage
+FCT_PARK,Car Parking Area,EQ210,Car Parking Area,PR6177,Road surfaces cracked or damaged
+FCT_PARK,Car Parking Area,EQ211,Car Parking Area Canopy,PR6183,Customer / staff parking canopy damaged
+FCT_PARK,Car Parking Area,EQ212,Security Lighting Columns,PR6184,Lighting column damaged
+FCT_SURF,Surface / Pavement,EQ216,Road Surfaces,PR6177,Road surfaces cracked or damaged
+FCT_SURF,Surface / Pavement,EQ213,Manhole and Covers,PR6185,Manhole or access cover damaged
+FCT_SURF,Surface / Pavement,EQ213,Manhole and Covers,PR6186,Manhole or access cover missing
+FCT_SURF,Surface / Pavement,EQ214,Pavement Stones,PR6187,Paving stones missing
+FCT_SURF,Surface / Pavement,EQ215,Road and Lane Markings,PR6188,Road Markings Require Attension
+FCT_TIGH,Leak Tight Wall,EQ217,Leak Tight Wall,PR6189,Leak tight refuelling area wall / splashback screen damaged
+FOD_ABDU,Ambiant Display Unit,*513913,Ambiant Display Unit,PR6020,Glass broken (HSSE Hazard)
+FOD_ABDU,Ambiant Display Unit,*513913,Ambiant Display Unit,PR6021,Glass cracked
+FOD_ABDU,Ambiant Display Unit,*513913,Ambiant Display Unit,PR6166,Lighting fault
+FOD_ABDU,Ambiant Display Unit,*513913,Ambiant Display Unit,PR8009,Unit not cooling/heating
+FOD_BLEN,Brazilian Blender,*513892,Blender,PR6194,Food service equipment faulty or damaged
+FOD_CAKE,Cake Display Unit,*514014,Cake Display Unit,PR6020,Glass broken (HSSE Hazard)
+FOD_CAKE,Cake Display Unit,*514014,Cake Display Unit,PR6021,Glass cracked
+FOD_CAKE,Cake Display Unit,*514014,Cake Display Unit,PR6062,Electrical fault / power failure
+FOD_CAKE,Cake Display Unit,*514014,Cake Display Unit,PR6166,Lighting fault
+FOD_CAKE,Cake Display Unit,*514014,Cake Display Unit,PR6280,Unit vibrating or noisy
+FOD_CAKE,Cake Display Unit,*514014,Cake Display Unit,PR8006,Cake display inoperative (no cooling)
+FOD_CAKE,Cake Display Unit,*514014,Cake Display Unit,PR8013,Cake display leaking water
+FOD_COFF,Coffee Dispenser,EQ223,Coffee Machines,PR6194,Food service equipment faulty or damaged
+FOD_COFF,Coffee Dispenser,EQ223,Coffee Machines,PR6197,All coffee machines faulty
+FOD_CRUS,Ice Dispenser,EQ230,Ice Dispenser,PR6194,Food service equipment faulty or damaged
+FOD_DOG,Hot Dog Roller Grill,EQ231,Hot Dog Roller Grill,PR6194,Food service equipment faulty or damaged
+FOD_EXUN,Extraction Unit,EQ233,Extraction Unit,PR6198,Air / smoke extractor faulty
+FOD_EXUN,Extraction Unit,EQ234,Extraction Unit Filters,PR6199,Air / smoke extractor filters full or blocked
+FOD_FAT,Fat Extractor,EQ236,Fat Extractor,PR6194,Food service equipment faulty or damaged
+FOD_FCNT,Counter,EQ237,Food Counters,PR6192,Counters damaged or broken
+FOD_FCNT,Counter,EQ238,Sales Counters,PR6192,Counters damaged or broken
+FOD_FRY,Fryer,EQ239,Deep Fryer,PR6194,Food service equipment faulty or damaged
+FOD_GRIN,Brazilian Grinder,*514225,Grinder,PR6194,Food service equipment faulty or damaged
+FOD_HOT,Heating Plate,EQ240,Heating Plate,PR6194,Food service equipment faulty or damaged
+FOD_JUIC,Juice Dispensers,EQ241,Juice Dispensers,PR6194,Food service equipment faulty or damaged
+FOD_MICR,Microwaves,EQ242,Microwaves,PR6194,Food service equipment faulty or damaged
+FOD_MISC,Food Miscellaneous,EQ243,Bread Maker,PR6194,Food service equipment faulty or damaged
+FOD_MISC,Food Miscellaneous,EQ246,Food Miscellaneous,PR6194,Food service equipment faulty or damaged
+FOD_MISC,Food Miscellaneous,EQ247,General Kitchen Equipment,PR6194,Food service equipment faulty or damaged
+FOD_MISC,Food Miscellaneous,EQ250,Newspaper / Product Stands,PR6202,Shop Newspaper / Product stands faulty or damaged
+FOD_MISC,Food Miscellaneous,EQ445,Water Filtration System,PR6467,Water filtration system faulty or damaged
+FOD_OVEN,Ovens,EQ252,Ovens,PR6020,Glass broken (HSSE Hazard)
+FOD_OVEN,Ovens,EQ252,Ovens,PR6021,Glass cracked
+FOD_OVEN,Ovens,EQ252,Ovens,PR6062,Electrical fault / power failure
+FOD_OVEN,Ovens,EQ252,Ovens,PR6166,Lighting fault
+FOD_OVEN,Ovens,EQ252,Ovens,PR6194,Food service equipment faulty or damaged
+FOD_OVEN,Ovens,EQ252,Ovens,PR6313,Door faulty (including door seals)
+FOD_OVEN,Ovens,EQ252,Ovens,PR6460,Filter replacement required
+FOD_PIEW,Pie Display Warmer Unit,*514236,Pie Warmer,PR6020,Glass broken (HSSE Hazard)
+FOD_PIEW,Pie Display Warmer Unit,*514236,Pie Warmer,PR6021,Glass cracked
+FOD_PIEW,Pie Display Warmer Unit,*514236,Pie Warmer,PR6062,Electrical fault / power failure
+FOD_PIEW,Pie Display Warmer Unit,*514236,Pie Warmer,PR6166,Lighting fault
+FOD_PIEW,Pie Display Warmer Unit,*514236,Pie Warmer,PR6018,Door faulty or damaged
+FOD_PIEW,Pie Display Warmer Unit,*514236,Pie Warmer,PR6193,Heating element faulty
+FOD_PIEW,Pie Display Warmer Unit,*514236,Pie Warmer,PR8001,Fan noisy
+FOD_PROV,Prover,*514562,Prover,PR6020,Glass broken (HSSE Hazard)
+FOD_PROV,Prover,*514562,Prover,PR6021,Glass cracked
+FOD_PROV,Prover,*514562,Prover,PR6062,Electrical fault / power failure
+FOD_PROV,Prover,*514562,Prover,PR6166,Lighting fault
+FOD_PROV,Prover,*514562,Prover,PR6194,Food service equipment faulty or damaged
+FOD_PROV,Prover,*514562,Prover,PR6313,Door faulty (including door seals)
+FOD_SCAL,Food Scales,EQ257,Food Scales,PR6204,Food scales faulty or damaged
+FSY_DISP,Dispenser,EQ261,Dispenser (n),PR6062,Electrical fault / power failure
+FSY_DISP,Dispenser,EQ263,Dispenser Power Supply,PR6062,Electrical fault / power failure
+FSY_DISP,Dispenser,EQ264,Fuelling Position (n),PR6063,Dispenser nozzle faulty
+FSY_DISP,Dispenser,EQ261,Dispenser (n),PR6064,Dispenser panels damaged
+FSY_DISP,Dispenser,EQ264,Fuelling Position (n),PR6065,Dispenser slow or incomplete fuel delivery
+FSY_DISP,Dispenser,EQ261,Dispenser (n),PR6067,Dispenser display faulty
+FSY_DISP,Dispenser,EQ264,Fuelling Position (n),PR6068,Dispenser hose faulty
+FSY_DISP,Dispenser,EQ264,Fuelling Position (n),PR6069,Fuel Leak : dispenser nozzle or hose
+FSY_DISP,Dispenser,EQ261,Dispenser (n),PR6166,Lighting fault
+FSY_DISP,Dispenser,EQ261,Dispenser (n),PR6210,One Grade inoperative
+FSY_DISP,Dispenser,EQ261,Dispenser (n),PR6211,Vandalism / Graffiti
+FSY_DISP,Dispenser,EQ262,Dispenser Metering,PR6212,Metering system faulty or damaged
+FSY_DISP,Dispenser,EQ261,Dispenser (n),PR6214,Dispensers inoperative over 50% of Grade effected on Site
+FSY_DISP,Dispenser,EQ261,Dispenser (n),PR6215,Dispensers inoperative  less than 50% of Grade effected on Site
+FSY_DISP,Dispenser,EQ264,Fuelling Position (n),PR6216,Dispenser auto-start flap faulty
+FSY_DISP,Dispenser,EQ261,Dispenser (n),PR6217,Dispenser doesn't stop at the requested volume / purchase amount
+FSY_DISP,Dispenser,EQ264,Fuelling Position (n),PR6217,Dispenser doesn't stop at the requested volume / purchase amount
+FSY_DISP,Dispenser,EQ261,Dispenser (n),PR6219,Dispenser noisy
+FSY_DISP,Dispenser,EQ261,Dispenser (n),PR6220,Dispenser totally inoperative
+FSY_DISP,Dispenser,EQ261,Dispenser (n),PR6222,High Speed Diesel (HGV) dispenser Inoperative
+FSY_DISP,Dispenser,EQ264,Fuelling Position (n),PR6223,Volume pre-setting buttons faulty
+FSY_DISP,Dispenser,EQ261,Dispenser (n),PR6226,Fuel Spill : major (HSSE Hazard)
+FSY_DISP,Dispenser,EQ261,Dispenser (n),PR6227,Fuel Spill : minor
+FSY_DISP,Dispenser,EQ264,Fuelling Position (n),PR6228,Fuel Leak : dispenser internal connections / pump unit
+FSY_DISP,Dispenser,EQ261,Dispenser (n),PR6349,Door locks faulty or damaged
+FSY_DISP,Dispenser,EQ264,Fuelling Position (n),PR6468,Dispenser calibration required
+FSY_DISP,Dispenser,EQ264,Fuelling Position (n),PR6469,Hose couplings / connections damaged
+FSY_DISP,Dispenser,EQ264,Fuelling Position (n),PR6470,Hose retractor faulty or damaged
+FSY_DISP,Dispenser,EQ264,Fuelling Position (n),PR8002,Attendant tag faulty
+FSY_GAUG,Tank Gauge (ATG),EQ268,Tank Gauges,PR6233,Tank level gauge: unable to print report
+FSY_GAUG,Tank Gauge (ATG),EQ267,Tank Gauge Alarm,PR6234,Tank alarm: probe fault
+FSY_GAUG,Tank Gauge (ATG),EQ267,Tank Gauge Alarm,PR6235,Tank alarm: water alarm activated
+FSY_GAUG,Tank Gauge (ATG),EQ267,Tank Gauge Alarm,PR6236,Tank alarm: water level warning
+FSY_GAUG,Tank Gauge (ATG),EQ268,Tank Gauges,PR6237,Tank auto:level polling (Pol-cat) faulty
+FSY_GAUG,Tank Gauge (ATG),EQ268,Tank Gauges,PR8004,ATG Clock setting out
+FSY_GAUG,Tank Gauge (ATG),EQ268,Tank Gauges,PR8005,ATG Variance on readings
+FSY_GAUG,Tank Gauge (ATG),EQ268,Tank Gauges,PR8006,ATG not operational
+FSY_LEAK,Leak Detection System,EQ275,Manhole Water Leak Detection,PR6240,Tanks: water in off-set fill point or on top of tank
+FSY_LEAK,Leak Detection System,EQ270,Ground Water Sampling Point,PR6241,Leak detected from ground water sampling point
+FSY_LEAK,Leak Detection System,EQ273,Leak Detection System Pipework,PR6244,Pipework alarm: fuel leak alarm (double-skin system)
+FSY_LEAK,Leak Detection System,EQ274,Leak Detection System Tanks,PR6245,Tank alarm: leak indication
+FSY_LEAK,Leak Detection System,EQ274,Leak Detection System Tanks,PR6246,Tank alarm: single skin tank alarm
+FSY_LEAK,Leak Detection System,EQ275,Manhole Water Leak Detection,PR6250,Ground water sampling point indicates a fuel leak
+FSY_LEAK,Leak Detection System,EQ275,Manhole Water Leak Detection,PR6251,Manhole water leak detected
+FSY_LEAK,Leak Detection System,EQ273,Leak Detection System Pipework,PR6496,PLLD alarm
+FSY_LEAK,Leak Detection System,EQ273,Leak Detection System Pipework,PR6497,PLLD alarm: fuel grade cut-off activated
+FSY_OFP,Overfill Protection,EQ276,Overfill Protection,PR6252,Tank electrical overfill protection system faulty
+FSY_OFP,Overfill Protection,EQ276,Overfill Protection,PR6253,Tank mechanical overfill protection system faulty
+FSY_OFP,Overfill Protection,EQ276,Overfill Protection,PR6254,Tank overfill protection system faulty Tanker Delivery Not Possible
+FSY_PIPE,Pipework,EQ277,Emergency Fuel Cut-off System,PR6070,Emergency stop button / system faulty (no fuel flow)
+FSY_PIPE,Pipework,EQ279,Pipework,PR6072,Above ground pipe work / valves : major repairs (HSSE Hazard)
+FSY_PIPE,Pipework,EQ279,Pipework,PR6073,Above ground pipe work / valves faulty or minor damage
+FSY_PIPE,Pipework,EQ279,Pipework,PR6074,Under ground pipe work / valves damaged : major repairs (HSSE Hazard)
+FSY_PIPE,Pipework,EQ279,Pipework,PR6075,Under ground pipe work / valves faulty or damaged : minor repairs
+FSY_PIPE,Pipework,EQ278,Fillingpoint Cover / Box,PR6255,"Tanker delivery: connection covers / caps / jack damaged, faulty or missing"
+FSY_PIPE,Pipework,EQ279,Pipework,PR6256,Tank vent stacks faulty or damaged
+FSY_PIPE,Pipework,EQ279,Pipework,PR6257,Tanks/pipe work valves blocked
+FSY_PIPE,Pipework,*515673,Pipework Dip Cap,PR6258,Tanker delivery: connections / couplings / caps damaged or faulty but operational
+FSY_PIPE,Pipework,EQ280,Pipework Filler Cap,PR6258,Tanker delivery: connections / couplings / caps damaged or faulty but operational
+FSY_PIPE,Pipework,*515673,Pipework Dip Cap,PR6259,Tanker delivery: connections / couplings / caps damaged or faulty not operational
+FSY_PIPE,Pipework,EQ280,Pipework Filler Cap,PR6259,Tanker delivery: connections / couplings / caps damaged or faulty not operational
+FSY_PIPE,Pipework,EQ281,Pipework Line Testing,PR6260,Pipe work pressure test required
+FSY_PIPE,Pipework,EQ278,Fillingpoint Cover / Box,PR6281,Water leaking
+FSY_PIPE,Pipework,EQ279,Pipework,PR6471,Tank vent stacks pressure relief valve faulty or damaged
+FSY_SUB,Fuel Systems Submersible Pump,EQ282,Fuel Systems Submersible Pump,PR6261,Tanks: submersible pump low pressure or faulty
+FSY_SUB,Fuel Systems Submersible Pump,EQ282,Fuel Systems Submersible Pump,PR6262,Tanks: submersible pump not operational
+FSY_SUB,Fuel Systems Submersible Pump,EQ282,Fuel Systems Submersible Pump,PR6472,Tanks: submersible pump open electical
+FSY_TANK,Fuel Tanks,EQ283,Fuel Tanks,PR8014,Tanks : Tank Cleaning
+FSY_TANK,Fuel Tanks,EQ283,Fuel Tanks,PR6248,Tank dip indicates increasing water level (significant quantities)
+FSY_TANK,Fuel Tanks,EQ283,Fuel Tanks,PR6249,Tank dip indicates increasing water level (small quantities)
+FSY_TANK,Fuel Tanks,EQ284,Tank - Tank and Line Testing,PR6263,Tank pressure test required
+FSY_TANK,Fuel Tanks,EQ283,Fuel Tanks,PR6264,Tank dip pipe damaged or broken
+FSY_TANK,Fuel Tanks,EQ283,Fuel Tanks,PR6265,Tanker delivery: fuel discharging too slowly
+FSY_TANK,Fuel Tanks,EQ283,Fuel Tanks,PR6503,Tank Problem Unable to make Delivery
+FSY_TANK,Fuel Tanks,EQ283,Fuel Tanks,PR8003,Tanks : not syphoning
+HVC_AIR,Aircon Units,EQ288,Air Conditioning Units,PR6273,Air-conditioning unit totally inoperative (Summer)
+HVC_AIR,Aircon Units,EQ288,Air Conditioning Units,PR6274,Air-conditioning unit totally inoperative (Winter)
+HVC_AIR,Aircon Units,EQ289,Air Curtain,PR6275,Shop entrance: air curtain inoperative
+HVC_AIR,Aircon Units,EQ288,Air Conditioning Units,PR6276,Temperature too high (Summer)
+HVC_AIR,Aircon Units,EQ288,Air Conditioning Units,PR6277,Temperature too high (Winter)
+HVC_AIR,Aircon Units,EQ288,Air Conditioning Units,PR6278,Temperature too low (Summer)
+HVC_AIR,Aircon Units,EQ288,Air Conditioning Units,PR6279,Temperature too low (Winter)
+HVC_AIR,Aircon Units,EQ288,Air Conditioning Units,PR6280,Unit vibrating or noisy
+HVC_AIR,Aircon Units,EQ288,Air Conditioning Units,PR6281,Water leaking
+HVC_AIR,Aircon Units,EQ288,Air Conditioning Units,PR6460,Filter replacement required
+HVC_AIR,Aircon Units,EQ288,Air Conditioning Units,PR6483,Inspected HVAC condessor / compressor requires replacement
+HVC_DUCT,Ductwork,EQ290,Electrical Ductwork / Cabling,PR6162,Electrical wiring / cables damaged or loose
+HVC_FANS,General Ventilation Fans,EQ291,General Ventilation Fans,PR6282,Ventilation fans faulty
+PRM_CANO,Canopy Fascia,EQ310,Canopy Fascia,PR6003,Major structural damage (HSSE Hazard)
+PRM_CANO,Canopy Fascia,EQ311,Red Bar equipped with LED Lighting,PR6003,Major structural damage (HSSE Hazard)
+PRM_CANO,Canopy Fascia,EQ312,Red Bar equipped with Tube  Lighting,PR6003,Major structural damage (HSSE Hazard)
+PRM_CANO,Canopy Fascia,EQ447,"Canopy ""Shell"" Logo Type",PR6003,Major structural damage (HSSE Hazard)
+PRM_CANO,Canopy Fascia,EQ310,Canopy Fascia,PR6004,Minor structural damage
+PRM_CANO,Canopy Fascia,EQ311,Red Bar equipped with LED Lighting,PR6004,Minor structural damage
+PRM_CANO,Canopy Fascia,EQ312,Red Bar equipped with Tube  Lighting,PR6004,Minor structural damage
+PRM_CANO,Canopy Fascia,EQ447,"Canopy ""Shell"" Logo Type",PR6004,Minor structural damage
+PRM_CANO,Canopy Fascia,EQ311,Red Bar equipped with LED Lighting,PR6166,Lighting fault
+PRM_CANO,Canopy Fascia,EQ312,Red Bar equipped with Tube  Lighting,PR6166,Lighting fault
+PRM_FASC,Prime Fascia,EQ313,Building Fascia,PR6003,Major structural damage (HSSE Hazard)
+PRM_FASC,Prime Fascia,EQ314,Flag Sign Fascia,PR6003,Major structural damage (HSSE Hazard)
+PRM_FASC,Prime Fascia,EQ315,Monoltih Fascia,PR6003,Major structural damage (HSSE Hazard)
+PRM_FASC,Prime Fascia,EQ316,Motorway Price Sign Fascia,PR6003,Major structural damage (HSSE Hazard)
+PRM_FASC,Prime Fascia,EQ317,Pole Sign Fascia,PR6003,Major structural damage (HSSE Hazard)
+PRM_FASC,Prime Fascia,EQ318,Pylon Sign Fascia,PR6003,Major structural damage (HSSE Hazard)
+PRM_FASC,Prime Fascia,EQ313,Building Fascia,PR6004,Minor structural damage
+PRM_FASC,Prime Fascia,EQ314,Flag Sign Fascia,PR6004,Minor structural damage
+PRM_FASC,Prime Fascia,EQ315,Monoltih Fascia,PR6004,Minor structural damage
+PRM_FASC,Prime Fascia,EQ316,Motorway Price Sign Fascia,PR6004,Minor structural damage
+PRM_FASC,Prime Fascia,EQ317,Pole Sign Fascia,PR6004,Minor structural damage
+PRM_FASC,Prime Fascia,EQ318,Pylon Sign Fascia,PR6004,Minor structural damage
+PRM_FASC,Prime Fascia,EQ313,Building Fascia,PR6305,Fascia panels damaged
+PRM_FASC,Prime Fascia,EQ314,Flag Sign Fascia,PR6305,Fascia panels damaged
+PRM_FASC,Prime Fascia,EQ315,Monoltih Fascia,PR6305,Fascia panels damaged
+PRM_FASC,Prime Fascia,EQ316,Motorway Price Sign Fascia,PR6305,Fascia panels damaged
+PRM_FASC,Prime Fascia,EQ317,Pole Sign Fascia,PR6305,Fascia panels damaged
+PRM_FASC,Prime Fascia,EQ318,Pylon Sign Fascia,PR6305,Fascia panels damaged
+PRM_FASC,Prime Fascia,EQ315,Monoltih Fascia,PR6306,Price display / brand fascia panels damaged
+PRM_FASC,Prime Fascia,EQ316,Motorway Price Sign Fascia,PR6306,Price display / brand fascia panels damaged
+PRM_FLAG,Flag Sign,EQ320,Flag Sign,PR6003,Major structural damage (HSSE Hazard)
+PRM_FLAG,Flag Sign,EQ320,Flag Sign,PR6004,Problem (Fault) Description
+PRM_MONO,Prime Sign,EQ321,Monolith,PR6003,Major structural damage (HSSE Hazard)
+PRM_MONO,Prime Sign,EQ321,Monolith,PR6004,Minor structural damage
+PRM_MONO,Prime Sign,EQ321,Monolith,PR6166,Lighting fault
+PRM_MONO,Prime Sign,EQ321,Monolith,PR6474,Price display font track damaged
+PRM_PCU,Price Control Unit,EQ325,Price Control Unit Electrical,PR6062,Electrical fault / power failure
+PRM_PCU,Price Control Unit,EQ326,Price Control Unit Remote Control Unit,PR6062,Electrical fault / power failure
+PRM_PCU,Price Control Unit,EQ322,General Price Sign Price Change Unit,PR6307,"Price change unit faulty, mechanical fault"
+PRM_PCU,Price Control Unit,EQ323,Monolith Price Change Unit,PR6307,"Price change unit faulty, mechanical fault"
+PRM_PCU,Price Control Unit,EQ324,Motorway Sign Price Change Unit,PR6307,"Price change unit faulty, mechanical fault"
+PRM_PCU,Price Control Unit,EQ327,Slim Line (Low Level Price) Price Change Unit,PR6307,"Price change unit faulty, mechanical fault"
+PRM_POLE,Pole Sign,EQ328,Pole Sign,PR6003,Major structural damage (HSSE Hazard)
+PRM_POLE,Pole Sign,EQ328,Pole Sign,PR6004,Minor structural damage
+PRM_PORT,Porticos,EQ329,Building Porticos,PR6003,Major structural damage (HSSE Hazard)
+PRM_PORT,Porticos,EQ329,Building Porticos,PR6004,Minor structural damage
+PRM_PYLO,Pylon Sign ( Above 14 Mtrs ),EQ332,Pylon Sign ( Above 14 Mtrs ),PR6003,Major structural damage (HSSE Hazard)
+PRM_PYLO,Pylon Sign ( Above 14 Mtrs ),EQ332,Pylon Sign ( Above 14 Mtrs ),PR6004,Minor structural damage
+REF_COMP,Condensing Unit,EQ335,Fridge Condensing Unit,PR6435,Compressor faulty but operational
+REF_COMP,Condensing Unit,EQ336,Freezer Condensing Unit,PR6435,Compressor faulty but operational
+REF_COMP,Condensing Unit,EQ335,Fridge Condensing Unit,PR6436,Compressor totally inoperative
+REF_COMP,Condensing Unit,EQ336,Freezer Condensing Unit,PR6436,Compressor totally inoperative
+REF_COMP,Condensing Unit,EQ335,Fridge Condensing Unit,PR6499,Inspected fridge condensor requires replacement
+REF_COMP,Condensing Unit,EQ336,Freezer Condensing Unit,PR6499,Inspected fridge condensor requires replacement
+REF_FREZ,Freezers,EQ337,Outside Display Freezers,PR6310,External bagged ice freezer inoperative (no freezing)
+REF_FREZ,Freezers,EQ337,Outside Display Freezers,PR6311,External freezers inoperative (no freezing)
+REF_FREZ,Freezers,EQ338,Shop Display Freezers,PR6312,All freezers inoperative (no freezing)
+REF_FREZ,Freezers,EQ338,Shop Display Freezers,PR6313,Door faulty (including door seals)
+REF_FREZ,Freezers,EQ338,Shop Display Freezers,PR6314,Freezer ice build-up
+REF_FREZ,Freezers,EQ338,Shop Display Freezers,PR6315,One freezer inoperative (no freezing)
+REF_FREZ,Freezers,EQ338,Shop Display Freezers,PR6316,Thermostat faulty (not cold / too cold)
+REF_FREZ,Freezers,EQ339,Utility / Storeroom Freezers,PR6317,Storeroom freezer faulty (no freezing)
+REF_FREZ,Freezers,EQ339,Utility / Storeroom Freezers,PR8007,Storeroom freezer lights not operational
+REF_FREZ,Freezers,EQ338,Shop Display Freezers,PR8011,Freezer is leaking water
+REF_FREZ,Freezers,EQ339,Utility / Storeroom Freezers,PR8012,Fridge making a noise
+REF_FRID,Fridges,EQ340,Shop Display Fridges,PR6313,Door faulty (including door seals)
+REF_FRID,Fridges,EQ340,Shop Display Fridges,PR6316,Thermostat faulty (not cold / too cold)
+REF_FRID,Fridges,EQ340,Shop Display Fridges,PR6318,All fridges inoperative  (no cooling)
+REF_FRID,Fridges,EQ340,Shop Display Fridges,PR6319,Fresh fruit / sandwiches display fridges faulty or damaged
+REF_FRID,Fridges,EQ340,Shop Display Fridges,PR6320,One fridge inoperative (no cooling)
+REF_FRID,Fridges,EQ341,Utility / Storeroom Fridges,PR6321,Storeroom fridge faulty (no cooling)
+REF_FRID,Fridges,EQ341,Utility / Storeroom Fridges,PR8008,Storeroom fridge lights not operational
+REF_FRID,Fridges,EQ341,Utility / Storeroom Fridges,PR8012,Fridge making a noise
+SAF_CNTR,Counter Safety (Bullet Proof Area),EQ351,Counter Safety (Bullet Proof Area),PR6339,Staff counter safety screens faulty or damaged
+SAF_CNTR,Counter Safety (Bullet Proof Area),EQ351,Counter Safety (Bullet Proof Area),PR6340,Staff counter safety screens will not close
+SAF_FIRE,Fire Equipment,EQ353,Fire Equipment,PR6342,Fire extinguisher faulty or missing
+SAF_FIRE,Fire Equipment,EQ353,Fire Equipment,PR6343,Sand box damaged or missing
+SAF_FIRE,Fire Equipment,EQ353,Fire Equipment,PR6344,Smoke extraction system faulty
+SAF_FIRE,Fire Equipment,EQ354,Sprinkler System,PR6345,Fire (sprinkler) protection system faulty
+SAF_FIRE,Fire Equipment,EQ446,Canopy Fire Suppression System,PR6473,Canopy fire suppression system faulty or needs inspected
+SAF_FIRE,Fire Equipment,EQ353,Fire Equipment,PR6492,Inspect/repair/replace dispenser UDC fire extinguisher
+SAF_LOCK,Locks,EQ358,Digital / Keypad Locks,PR6348,Door digital / keypad lock faulty or damaged
+SAF_LOCK,Locks,EQ360,External Security Door Locks,PR6348,Door digital / keypad lock faulty or damaged
+SAF_LOCK,Locks,EQ363,Office Digital / Keypad Locks,PR6348,Door digital / keypad lock faulty or damaged
+SAF_LOCK,Locks,EQ367,Staff Security Case Digital / Keypad Locks,PR6348,Door digital / keypad lock faulty or damaged
+SAF_LOCK,Locks,EQ357,Car Wash Door Locks,PR6349,Door locks faulty or damaged
+SAF_LOCK,Locks,EQ359,Electrical Locks,PR6349,Door locks faulty or damaged
+SAF_LOCK,Locks,EQ361,General Key Locks,PR6349,Door locks faulty or damaged
+SAF_LOCK,Locks,EQ362,Internal non-security door locks,PR6349,Door locks faulty or damaged
+SAF_LOCK,Locks,EQ364,Remote Locks,PR6349,Door locks faulty or damaged
+SAF_LOCK,Locks,EQ366,Shop Entrance Sliding / Normal Door Locks,PR6349,Door locks faulty or damaged
+SAF_LOCK,Locks,EQ368,Workshop Main / Roller Door Locks,PR6349,Door locks faulty or damaged
+SAF_LOCK,Locks,EQ364,Remote Locks,PR6350,Door electric lock faulty or damaged
+SAF_LOCK,Locks,EQ365,Shop Automatic Door Locks,PR6350,Door electric lock faulty or damaged
+SAF_LOCK,Locks,EQ365,Shop Automatic Door Locks,PR6351,Door remote locking operation faulty or damaged
+SAF_RAM,Anti-Ram Bollards,EQ370,Anti-Ram Bollards,PR6353,Anti-ram bollards faulty or damaged
+SAF_RAM,Anti-Ram Bollards,EQ370,Anti-Ram Bollards,PR6354,Dispenser island bollards faulty or damaged
+SAF_SAFE,Safes,EQ372,Safes,PR6190,Cash dispenser damaged or vandalised
+SAF_SAFE,Safes,EQ371,Change Dump Safe,PR6329,Change (coin rolls / small notes) dispenser faulty or damaged
+SAF_SAFE,Safes,EQ372,Safes,PR6355,Safe door / lock faulty or damaged
+SEC_CWBO,Car Wash Bollards,EQ377,Car Wash Bollards,PR6353,Anti-ram bollards faulty or damaged
+SEC_CWDR,Car Wash Directional Signs,EQ378,Car Wash Directional Signs,PR6305,Fascia panels damaged
+SEC_CWIN,Car Wash Instruction Signs,EQ379,Car Wash Instruction Signs,PR6305,Fascia panels damaged
+SEC_DIR,Direction Signs,EQ381,Direction Signs,PR6305,Fascia panels damaged
+SEC_ENTY,Entry/Exit Signs,EQ382,Entry/Exit Lighting Columns,PR6184,Lighting column damaged
+SEC_ENTY,Entry/Exit Signs,EQ383,Entry/Exit Signs,PR6305,Fascia panels damaged
+SEC_GRAD,ID Tags,EQ384,Dispenser Signs - Grade / Product,PR6358,Dispenser grade / product labels or signs damaged or missing
+SEC_GRAD,ID Tags,EQ385,Pipework Filler Cap Product Label,PR6359,Tanker delivery position: grade / product labels or signs damaged or missing
+SEC_GRAD,ID Tags,EQ386,Tank Signs - Grade / Product,PR6359,Tanker delivery position: grade / product labels or signs damaged or missing
+SEC_INFO,Infor./Facility Sign,EQ387,Information / Facility Sign,PR6360,Bathroom signage missing or damaged
+SEC_INFO,Infor./Facility Sign,EQ387,Information / Facility Sign,PR6361,Information sign damaged or missing
+SEC_INFO,Infor./Facility Sign,EQ387,Information / Facility Sign,PR6479,Location address/phone identifier sign missing or damaged
+SEC_LBOX,Spreader Boxes,EQ388,Spreader Boxes,PR6362,Dispenser mounted spreaderbox fascia damaged
+SEC_LEAD,Leader Boards,EQ389,Leader Boards,PR6363,Dispenser island leaderboard fascia damaged or missing
+SEC_MISC,Miscellaneous Signs,EQ390,Advertising Monitors (Video / CD / DVD display units),PR6365,Shop advertising monitor / screen faulty or damaged
+SEC_MISC,Miscellaneous Signs,EQ392,Flag,PR6367,Shell flag damaged or missing
+SEC_MISC,Miscellaneous Signs,EQ393,Flag Pole,PR6368,Shell flag-pole damaged
+SEC_MISC,Miscellaneous Signs,EQ394,Miscellaneous Signs,PR6370,Shop product dispay / advertising unit damaged or missing
+SEC_MISC,Miscellaneous Signs,EQ448,Canopy Height Sign,PR6476,Canopy height sign missing or damaged
+SEC_MISC,Miscellaneous Signs,EQ394,Miscellaneous Signs,PR6477,Emergency fuel stop signage missing or damaged
+SEC_MISC,Miscellaneous Signs,EQ394,Miscellaneous Signs,PR6478,Handicap parking signs missing or damaged
+SEC_NAME,Name Signs,EQ396,Site Name Signs,PR6372,Site name sign fascia damaged
+SEC_NOTE,Safety/Warning Stickers,EQ398,Safety/Warning Stickers,PR6374,Safety / warning labels or signs damaged or missing
+SEC_NOTE,Safety/Warning Stickers,EQ398,Safety/Warning Stickers,PR6375,Tank vent stack safety / warning labels damaged or missing
+SEC_NOTE,Safety/Warning Stickers,EQ398,Safety/Warning Stickers,PR6376,Tanker delivery position: safety / warning labels or signs damaged or missing
+SEC_NOTE,Safety/Warning Stickers,EQ398,Safety/Warning Stickers,PR6482,HSSE safety and state regulatory decals missing or damaged
+SEC_NOZZ,Dispenser Signs - Nozzles,EQ399,Dispenser Signs - Nozzles,PR6358,Dispenser grade / product labels or signs damaged or missing
+SEC_POST,Poster Frames,EQ400,Poster Frames,PR6377,Poster sign (static display) frame or mounting damaged
+SEC_POST,Poster Frames,EQ401,Rotating Poster Display,PR6378,Poster sign (rotating display) frame or mounting damaged
+SEC_SERV,Service Unit/Waste Bin,EQ406,Waste Bin,PR6221,Dispenser waste bin damaged
+SEC_SERV,Service Unit/Waste Bin,EQ403,Glove Dispenser,PR6380,Dispenser island glove dispenser damaged or missing
+SEC_SERV,Service Unit/Waste Bin,EQ404,Paper Towel Dispenser,PR6381,Dispenser island paper towel dispenser damaged or missing
+SEC_SERV,Service Unit/Waste Bin,EQ405,Service Unit,PR6382,Dispenser island customer service unit damaged
+SEC_SERV,Service Unit/Waste Bin,EQ405,Service Unit,PR6383,Dispenser island merchandising cabinet damaged
+SEC_SERV,Service Unit/Waste Bin,EQ406,Waste Bin,PR6384,Dispenser island waste bins damaged or missing
+VLT_CIRC,Water Reticulation System,EQ412,Water Recycling/Reclaim  Units,PR6391,Water recycling / re-circulation system faulty
+VLT_CIRC,Water Reticulation System,EQ412,Water Recycling/Reclaim  Units,PR6466,Water pumps or drive motors faulty or damaged
+WRK_COMP,Compressors,EQ424,Workshop Compressors,PR6423,Main site compressor: no / low pressure
+WRK_COMP,Compressors,EQ424,Workshop Compressors,PR6424,Main site compressor: totally inoperative
+WRK_COMP,Compressors,EQ424,Workshop Compressors,PR6427,Tire inflator display / gauges / hose faulty or damaged
+WRK_COMP,Compressors,EQ424,Workshop Compressors,PR8000,Main site compressor : high pressure switch faulty
+WRK_LIFT,Hoists,EQ429,Hydraulic Lifts,PR6432,Car lift / hoist faulty or damaged
+WRK_LIFT,Hoists,EQ429,Hydraulic Lifts,PR6433,Car lift / hoist oil leakage

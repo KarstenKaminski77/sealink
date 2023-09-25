@@ -1,0 +1,7 @@
+
+function Input_FilefieldPI(owner){this.owner=owner;this.input_name="Properties_input_filefield_name_"+this.owner.name;this.input_size="Properties_input_filefield_size_"+this.owner.name;}
+function Input_Filefield_renameInput(el,newName){el.removeAttribute("name");el.removeAttribute("NAME");el.setAttribute("NAME",newName);el.setAttribute("name",newName);return el;};function Input_FilefieldPI_apply(propName,propValue){switch(propName){case"name":var oldPropValue=this.owner.inspectedNode.name;if(propValue!=""){Input_Filefield_renameInput(this.owner.inspectedNode,propValue);var eID=this.owner.inspectedNode.id;if(!eID){this.owner.inspectedNode.id=propValue;}}else{this.owner.inspectedNode.removeAttribute("name");}
+break;case"size":var oldPropValue=this.owner.inspectedNode.size;if(propValue!=""){this.owner.inspectedNode.size=Math.max(1,propValue);}else{this.owner.inspectedNode.removeAttribute("size");}
+break;}
+try{fixFocusHack(0);}
+catch(e){}};function Input_FilefieldPI_inspect(propName,propValue){util_safeSetFieldValue(this.input_name,this.owner.inspectedNode.getAttribute("name"));var propValue=this.owner.inspectedNode.getAttribute("size");var specified=/<input[^>]*size=['"]?[0-9]+['"]?[^>]*>/i.test(this.owner.inspectedNode.outerHTML);util_safeSetFieldValue(this.input_size,propValue&&specified?propValue:'');};Input_FilefieldPI.prototype.apply=Input_FilefieldPI_apply;Input_FilefieldPI.prototype.inspect=Input_FilefieldPI_inspect;window.KtmlPIObjects["input_filefield"]=Input_FilefieldPI;

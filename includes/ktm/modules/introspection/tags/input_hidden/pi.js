@@ -1,0 +1,7 @@
+
+function Input_HiddenPI(owner){this.owner=owner;this.input_id="Properties_input_hidden_id_"+this.owner.name;this.input_value="Properties_input_hidden_value_"+this.owner.name;};function Input_Hidden_renameInput(el,newName){el.removeAttribute("name");el.removeAttribute("NAME");el.setAttribute("NAME",newName);el.setAttribute("name",newName);return el;};function Input_HiddenPI_apply(propName,propValue){var inspected=this.owner.inspectedNode;if(/img/i.test(inspected.tagName)&&inspected.getAttribute("orig")){inspected=new WMedia_Translator(this.owner);}
+switch(propName){case"id":if(propValue!=""){inspected.setAttribute("id",propValue);}else{inspected.removeAttribute("id");};break;case"value":if(propValue!=""){inspected.setAttribute("value",String_htmlencode(propValue));}else{inspected.removeAttribute("value");}
+break;}
+this.owner.logic_domSelect(inspected,2);try{fixFocusHack(0);}
+catch(e){}};function Input_HiddenPI_inspect(propName,propValue){var inspected=this.owner.inspectedNode;if(/img/i.test(inspected.tagName)&&inspected.getAttribute("orig")){inspected=new WMedia_Translator(this.owner);}
+util_safeSetFieldValue(this.input_id,inspected.getAttribute("id"));var specified=inspected.getAttribute("value")!=null;var propValue=inspected.getAttribute("value");util_safeSetFieldValue(this.input_value,propValue&&specified?String_htmldecode(propValue):'');};Input_HiddenPI.prototype.apply=Input_HiddenPI_apply;Input_HiddenPI.prototype.inspect=Input_HiddenPI_inspect;window.KtmlPIObjects["input_hidden"]=Input_HiddenPI;

@@ -1,0 +1,3 @@
+
+$DEFAULT_NUM_SECONDS=1200;function util_preserveSession(keepalive){if(window.ktmls&&window.ktmls[0]){window.ktmls[0].makeRequest("session","keepalive",{},function(result){setTimeout('util_preserveSession('+keepalive+')',keepalive*1000);},false);}};function expire_runonce(){var keepalive=$DEFAULT_NUM_SECONDS;if(typeof ktml_init_object['session_keepalive']=='number'){keepalive=ktml_init_object.session_keepalive;}
+setTimeout('util_preserveSession('+keepalive+')',keepalive*1000);};function expire_runeach(k){};

@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>Text Field Properties</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script src="../../../../../common/js/base.js"></script>
+<script src="../../../../../common/js/utility.js"></script>
+<script src="../common.js"></script>
+</head>
+<body onLoad="initializeUI('input_text')">
+<div id="Properties_input_text___objectName__" class="property_body ktml_bg"> <nobr>
+  <table border="0" class="introspector">
+    <tr>
+      <td nowrap="nowrap" style="white-space: nowrap !important; text-align: left">||Introspection ID Label||:&nbsp;</td>
+      <td rowspan="2" nowrap="nowrap"><img ssrc="__relativeImagePath__/vspacer.gif" height="44" width="2" border="0" style="margin: 0px 3px"></td>
+      <td nowrap="nowrap" style="white-space: nowrap !important; text-align: right">&nbsp;||Char Width||:&nbsp;</td>
+      <td nowrap="nowrap"><input name="Properties_input_text_size___objectName__"
+					id="Properties_input_text_size___objectName__"
+					type="text"
+					class="ktml_input"
+					style="white-space: nowrap !important;"
+					onBlur="if (!util_checkMeasureUnit(this, 1000)) { return false;};window['ktml___objectName__'].introspector.apply('size', this.value);"
+					help_topic_id="PI_textfield_charwidth"
+					onKeyPress="return util_preventEvent(this, event);"
+					size="3"
+					maxlength="8"/>
+        <input name="Properties_textarea_cols___objectName__"
+					id="Properties_textarea_cols___objectName__"
+					type="text"
+					class="ktml_input"
+					style="display:none"
+					onBlur="if (!util_checkMeasureUnit(this, 1000)) { return false;};window['ktml___objectName__'].introspector.apply('cols', this.value);"
+					help_topic_id="PI_textarea_charwidth"
+					onKeyPress="return util_preventEvent(this, event);"
+					size="3"
+					maxlength="8"/></td>
+      <td nowrap="nowrap" style="white-space: nowrap !important; text-align: right">&nbsp;||Type||:&nbsp;</td>
+      <td nowrap="nowrap"><select name="Properties_input_text_type___objectName__"
+						id="Properties_input_text_type___objectName__"
+						onkeydown="return util_preventEvent(this, event);"
+						class="ktml_select" onkeypress="return util_preventEvent(this, event);"
+						style="width:80px"
+						help_topic_id="PI_textfield_type"
+						onChange="window['ktml___objectName__'].introspector.apply('type', this.value);" >
+          <option value="text" selected>||Single Line||</option>
+          <option value="textarea">||Multi Line||</option>
+          <option value="password">||Password||</option>
+        </select></td>
+      <td nowrap="nowrap" style="white-space: nowrap !important">&nbsp;||Init Val||:&nbsp;</td>
+      <td rowspan="2" style="vertical-align: top; height: 41px" nowrap="nowrap"; 
+					id="Properties_input_text_td_value___objectName__"><input name="Properties_input_text_value___objectName__" 
+							id="Properties_input_text_value___objectName__" 
+							type="text"
+							class="ktml_input"
+							style="white-space: nowrap !important; width: 80px"
+							onBlur="window['ktml___objectName__'].introspector.apply('value', this.value);"
+							help_topic_id="PI_textfield_init"
+							onKeyPress="return util_preventEvent(this, event);"
+							size="8"/></td>
+      <td rowspan="2" nowrap="nowrap" 
+					style="display:none;"
+					id="Properties_textarea_td_value___objectName__"><textarea
+							name="Properties_textarea_value___objectName__"
+							cols="14" rows="3"
+							style="width: 80px; height: 36px"
+							class="ktml_input"
+							id="Properties_textarea_value___objectName__"
+							onBlur="window['ktml___objectName__'].introspector.apply('value', this.value);"
+							help_topic_id="PI_textarea_init"
+							onKeyPress="return util_preventEvent(this, event);"></textarea></td>
+    </tr>
+    <tr>
+      <td nowrap="nowrap"><input name="Properties_input_text_id___objectName__"
+						id="Properties_input_text_id___objectName__"
+						type="text" 
+						class="ktml_input"
+						style="white-space: nowrap !important;"
+						onBlur="window['ktml___objectName__'].introspector.apply('id', this.value);"
+						help_topic_id="PI_textfield_id"
+						onKeyPress="return util_preventEvent(this, event);"
+						size="12"/>
+        &nbsp;</td>
+      <td nowrap="nowrap"><div style="white-space: nowrap !important;" id="label_maxlength___objectName__">&nbsp;||Max Chars||:&nbsp;</div>
+        <div style="white-space: nowrap !important; display:none" id="label_rows___objectName__">&nbsp;||Num Lines||:&nbsp;</div></td>
+      <td nowrap="nowrap"><input name="Properties_input_text_maxlength___objectName__"
+						id="Properties_input_text_maxlength___objectName__"
+						type="text"
+						class="ktml_input"
+						style="white-space: nowrap !important;"
+						onBlur="if (!util_checkMeasureUnit(this, 1000)) { return false;};window['ktml___objectName__'].introspector.apply('maxlength', this.value);"
+						help_topic_id="PI_textfield_maxchars"
+						onKeyPress="return util_preventEvent(this, event);"
+						size="3"
+						maxlength="8"/>
+        <input name="Properties_textarea_rows___objectName__"
+						id="Properties_textarea_rows___objectName__"
+						type="text"
+						class="ktml_input"
+						style="display:none"
+						onBlur="if (!util_checkMeasureUnit(this, 1000)) { return false;};window['ktml___objectName__'].introspector.apply('rows', this.value);"
+						help_topic_id="PI_textarea_maxchars"
+						onKeyPress="return util_preventEvent(this, event);"
+						size="3"
+						maxlength="8"/></td>
+      <td id="Properties_textarea_wrap_label___objectName__"
+					nowrap="nowrap" 
+					style="white-space: nowrap !important; visibility: hidden; text-align: right">&nbsp;||Wrap||:&nbsp;</td>
+      <td id="Properties_textarea_wrap_select___objectName__"
+					nowrap="nowrap"  
+					style="visibility: hidden"><select name="Properties_textarea_wrap___objectName__"
+						id="Properties_textarea_wrap___objectName__" 
+						onkeydown="return util_preventEvent(this, event);"
+						class="ktml_select" onkeypress="return util_preventEvent(this, event);"
+						style="width:80px"
+						help_topic_id="PI_textarea_wrap"
+						onChange="window['ktml___objectName__'].introspector.apply('wrap', this.value);">
+          <option value="">||Default||</option>
+          <option value="off">||Off||</option>
+          <option value="">||Virtual||</option>
+          <option value="hard" selected>||Physical||</option>
+        </select></td>
+      <td nowrap="nowrap">&nbsp;</td>
+    </tr>
+  </table>
+  </nobr> </div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+
+function GlyphHandler_show(forTag){window.clearTimeout(this.hideGlyphTimeout);try{var tagName=forTag.tagName.toLowerCase();}catch(e){return;}
+var glyph=null;if(glyph=document.getElementById("glyphFor_"+tagName)){glyph.selectObject=forTag;glyph.style.display="block";}else{return;}
+var _parent=(parent==self)?parent:self;var pbox=utility.dom.getBox(_parent.ktmls[this.owner].iframe);var box=utility.dom.getBox(forTag);var gw=glyph.offsetHeight;var elx=box.x+_parent.ktmls[this.owner].edit.documentElement.scrollLeft;var frx=pbox.x+document.documentElement.scrollLeft;var nx=frx+(elx>0?elx:0)-gw+glyph.GLYPH_DELTAX;glyph.style.left=(nx>document.documentElement.scrollLeft?nx:document.documentElement.scrollLeft)+"px";var gh=glyph.offsetHeight;var ely=box.y+_parent.ktmls[this.owner].edit.documentElement.scrollTop;var fry=pbox.y+document.documentElement.scrollTop;var ny=(fry+(ely>0?ely:0)-gh+glyph.GLYPH_DELTAY);glyph.style.top=(ny>document.documentElement.scrollTop?ny:document.documentElement.scrollTop)+"px";glyph=null;}
+if(typeof GlyphHandler!="undefined"){GlyphHandler.prototype.show=GlyphHandler_show;}

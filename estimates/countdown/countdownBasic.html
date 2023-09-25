@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>jQuery Countdown</title>
+<link rel="stylesheet" href="jquery.countdown.css">
+<style type="text/css">
+#defaultCountdown { width: 240px; height: 45px; }
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="jquery.plugin.js"></script>
+<script src="jquery.countdown.js"></script>
+<script>
+$(function () {
+	var austDay = new Date();
+	
+	$('#pauseButton').click(function() { 
+		var pause = $(this).text() === 'Pause'; 
+		$(this).text(pause ? 'Resume' : 'Pause'); 
+		$('#defaultCountdown').countdown(pause ? 'pause' : 'resume'); 
+	}); 
+	 
+	$('#toggleButton').click(function() { 
+		$('#defaultCountdown').countdown('toggle'); 
+	});
+	
+	$('#defaultCountdown').countdown({until: +333});
+	$('#defaultCountdown').countdown('pause') // Stop the countdown but don't clear it
+	$('#year').text(austDay.getFullYear());
+});
+</script>
+</head>
+<body>
+
+<div id="defaultCountdown"></div>
+<button type="button" id="pauseButton">Pause</button>
+</body>
+</html>

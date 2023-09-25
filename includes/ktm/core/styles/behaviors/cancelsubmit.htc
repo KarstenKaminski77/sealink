@@ -1,0 +1,11 @@
+<public:component lightweight="true">
+<public:attach event="onsubmit" onevent="BlockSubmit()" />
+<script language="javascript">
+function BlockSubmit() {
+event.cancelBubble = true;
+event.returnValue = false;
+return false;
+}
+</script>
+
+</public:component>

@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	width:210mm;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+.top-details {
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 20px;
+}
+.header-jsa {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #0067AC;
+}
+.table {
+	border: 1px solid #333;
+}

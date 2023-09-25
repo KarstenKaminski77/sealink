@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html, body {
+    background-color:#F5F7FA;
+}
+
+select:hover {
+    cursor: pointer;
+}

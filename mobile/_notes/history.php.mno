@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="MMGuideColor" value="#00FF00" />
+	<infoitem key="MMGuideVisible" value="true" />
+	<infoitem key="MMGuideLocked" value="false" />
+	<infoitem key="MMSnapToGuide" value="true" />
+	<infoitem key="MMGuidesSnapToElements" value="true" />
+	<infoitem key="MMDistanceColor" value="#0000FF" />
+	<infoitem key="UD_Recordset1" value="name:Id;datatype:int,name:Site;datatype:blob,name:JobNo;datatype:string,name:Date;datatype:date,name:JobId;datatype:int,name:TechnicianId;datatype:int,name:OnHold;datatype:int" />
+	<infoitem key="UD_Recordset2" value="name:Id;datatype:int,name:AreaId;datatype:int,name:QuoteNo;datatype:string,name:JobNo;datatype:string,name:JobNumber;datatype:string,name:CompanyId;datatype:int,name:SiteId;datatype:int,name:Description;datatype:blob,name:Unit;datatype:string,name:Qty;datatype:int,name:Price;datatype:real,name:Total1;datatype:real,name:Email;datatype:string,name:SubTotal;datatype:real,name:VAT;datatype:real,name:Total2;datatype:real,name:Date;datatype:string,name:Labour;datatype:int,name:Material;datatype:int,name:Comment;datatype:int,name:CommentDate;datatype:blob,name:CommentName;datatype:string,name:CommentText;datatype:blob,name:FeedBack;datatype:blob,name:FeedBackTech;datatype:int,name:FeedBackDate;datatype:string,name:Transport;datatype:int,name:JobDescription;datatype:blob,name:Date1;datatype:string,name:Date2;datatype:string,name:CompletionDate;datatype:string,name:InvoiceNo;datatype:int,name:InvoiceSent;datatype:int,name:InvoiceDate;datatype:string,name:Total;datatype:real,name:JobId;datatype:int,name:SearchDate;datatype:string,name:Description1;datatype:blob,name:Unit1;datatype:string,name:Qty1;datatype:string,name:Price1;datatype:real,name:Labour1;datatype:int,name:Material1;datatype:int,name:Transport1;datatype:int,name:SubTotal1;datatype:real,name:VAT1;datatype:real,name:Total3;datatype:real,name:InvoiceQ;datatype:int,name:VatIncl;datatype:real,name:TransportComment;datatype:string,name:Reason;datatype:blob,name:Message;datatype:blob,name:Reference;datatype:string,name:RefNo;datatype:string,name:String;datatype:int,name:Status;datatype:int,name:CustomerFeedBack;datatype:blob,name:Print;datatype:int,name:Days;datatype:blob,name:Import;datatype:int,name:Archive;datatype:int,name:CostingHint;datatype:blob,name:HistoryLog;datatype:blob,name:HistoryPlatform;datatype:int,name:JobcardPDF;datatype:blob,name:Progress;datatype:int,name:JcDate;datatype:date" />
+	<infoitem key="MMGuideCount" value="1" />
+	<infoitem key="MMGuide0" value="vertical: user 747 px" />
+</info>

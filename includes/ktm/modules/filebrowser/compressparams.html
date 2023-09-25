@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Compress Image</title>
+
+<link href="../../core/styles/popup.css" rel="stylesheet" type="text/css">
+
+<script src="../../../common/js/base.js"></script>
+<script src="../../../common/js/utility.js"></script>
+<script src="../../core/js/lib/language.js"></script>
+<script>
+function init() {
+	utility.window.setModal();
+	getvars = new QueryString();
+	ktml = window.topOpener.ktmls[getvars.find('counter')];
+	document.body.innerHTML = lang_translatepage(document.body.innerHTML, ktml.config.UILanguage, window.topOpener);
+	document.getElementById("image_quality").focus();
+}
+
+function window_keyHandler(e) {
+	if (e.keyCode == 13) {
+		image_compress();
+	} else if(e.keyCode == 27) {
+		utility.window.close();	
+	}
+}
+function image_compress() {
+	set_button_state(false);
+	var degradejpeg_procent = document.getElementById('image_quality').value;
+	window.opener.cm_resumeCompressImages({degradejpeg_procent:degradejpeg_procent});
+	if(is.mozilla){
+		window.setInterval(function() {
+				if (opener.closeMe) {
+					opener.closeMe = false;
+					window.setTimeout('window.close()', 1);
+					
+				}
+			}, 100);
+	} else {
+		window.setTimeout('window.close()', 1);
+	}
+}
+function set_button_state(flag) {
+	document.getElementById('btnOK').disabled = flag;
+	document.getElementById('btnOK').onclick = null;
+	document.getElementById('btnCancel').disabled = flag;
+}
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body class="ktml_dialog ktml_bg" onkeydown="window_keyHandler(event)" onLoad="init()">
+<div class="dom_modal_dialog_content">
+<br />
+<table border="0" cellpadding="2"cellspacing="2" width="80">
+	<tr>
+		<td colspan="2" align="center">||Quality:||&nbsp;<input name="image_quality" id="image_quality" type="text" size="2" class="ktml_input" value="80" />&nbsp;%&nbsp;</td>
+	</tr>
+	<tr>
+		<td>		
+			<input class="actInputs" name="btnOK" id="btnOK" value="||Apply||"  type="button" onClick="image_compress();" />
+		</td>
+		<td>
+			<input class="actInputs" name="btnCancel" id="btnCancel" value="||Cancel||"  type="button" onClick="window.setTimeout('window.close()', 1);" />
+		</td>
+	</tr>
+</table>
+</div>
+</body>
+</html>

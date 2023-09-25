@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Find/Replace</title>
+
+<link href="../../core/styles/popup.css" rel="stylesheet" type="text/css">
+
+<script src="../../../common/js/base.js"></script>
+<script src="../../../common/js/utility.js"></script>
+<script src="../../core/js/lib/language.js"></script>
+<script src="../../core/js/lib/findreplace.js"></script>
+<script>
+_setModal = function() {
+	if (!window.dialogArguments) {
+		window.onbeforeunload = function() {
+			utility.window.hideModalBlocker(window.opener);
+		}
+	} else {
+		window.opener = dialogArguments;
+	}
+	if (window.opener.topOpener) {
+		window.topOpener = window.opener.topOpener;
+	} else {
+		window.topOpener = window.opener;
+	}
+	utility.dom.attachEvent(is.ie?window.document.body:window, 'keydown', function(e) {
+		var ret = utility.popup.escapeModal(e);
+		if (ret && e.keyCode == 27) {
+			utility.window.close();
+		}
+	});
+	utility.dom.attachEvent2(window.document.body, 'mousedown', utility.popup.removeModal);
+
+}
+
+_setUnselectable = function(el) {
+	if (is.ie) {
+		var allElements = document.body.all;
+		for(var i=0; i<allElements.length; i++){
+			if(allElements[i].tagName != "INPUT"){
+				allElements[i].unselectable = "On";
+				allElements[i].style.cursor = "default";
+			}else if(allElements[i].type == "text"){
+				allElements[i].style.cursor = "text";
+			}
+		}
+	} else {
+		var allChilds = utility.dom.getElementsByTagName(el,'*');
+		Array_each(allChilds, function(child){
+			var isHtmlEl = (child.nodeType == 1)? true: false;
+			if(/*isHtmlEl*/true){
+				var isInput   = ((child.nodeName.toLowerCase()=="input") && 
+				                 (child.getAttribute('type') && child.getAttribute('type').toLowerCase()=='text') ||
+				                 (child.getAttribute('type') && child.getAttribute('type').toLowerCase()=='password'))? true: false;
+				var isTxtArea = (child.nodeName.toLowerCase()=="textArea")? true: false;
+				if(!isInput && !isTxtArea ){
+					child.style.cursor = "default";
+					var hasHTMLChilds = utility.dom.getElementsByTagName(child, '*').length? true: false;
+					if(!hasHTMLChilds){
+						child.style.MozUserSelect = 'none';
+					}
+				} else{
+					child.style.cursor = "text";
+				};
+			};
+		});
+	}
+}
+
+function init() {
+	_setModal();
+
+	//init vars
+	getvars = new QueryString();
+	ktml = window.opener.ktmls[getvars.find('counter')];
+	selectedText = "";
+	_GOFIND = null;
+	
+	//get selection content
+	if (ktml.displayMode == "RICH") {
+		selectionRange = ktml.edit.selection.createRange();
+		if (ktml.edit.selection.type == "Text") {
+			selectedText = selectionRange.text;
+		} else if (ktml.edit.selection.type == "None"){
+			selectedText = "";
+		} else if (ktml.edit.selection.type == "Control"){
+			ktml.edit.selection.empty();
+			selectionRange = ktml.edit.selection.createRange();
+			selectedText = "";
+		}
+	} else {
+		if (window.opener.is.ie) {
+			selectionRange = window.opener.document.selection.createRange();
+			if (selectionRange.parentElement() != ktml.textarea) {
+				ktml.textarea.focus();
+				selectionRange = window.opener.document.selection.createRange();
+				selectionRange.collapse();
+			}
+			selectedText = selectionRange.text;
+		} else {
+			selectedText = ktml.textarea.value.substring(ktml.textarea.selectionStart, ktml.textarea.selectionEnd);
+		}
+	}
+	
+	//get find/replace boundaries
+	try {
+		nextFindStart = ktml.textarea.selectionStart;
+	} catch(e) {
+		nextFindStart = null;
+	}
+	
+	//setup what browser-dependent code to run
+	if (window.opener.is.mozilla) {
+		if (ktml.displayMode == 'RICH') {
+			findtext = FindTextMozillaRich;
+		} else {
+			findtext = FindTextMozillaCode;
+		}
+		replacetext = ReplaceTextMozilla;
+	} else {
+		findtext = FindTextIe;
+		replacetext = ReplaceTextIe;
+	}
+	
+	//add save last search behaviour to FIND call
+	_GOFIND = function(editorObj, fromTop, replaceAll){
+		var _enteredValue = document.getElementById("strSearch").value;
+		if(_enteredValue){
+			utility.cookie.set("last_search", _enteredValue, 1);
+		}
+		return findtext(editorObj, fromTop, replaceAll);
+	}
+	
+	//translate the page
+	document.body.innerHTML = lang_translatepage(document.body.innerHTML, ktml.config.UILanguage, window.opener);
+	_setUnselectable(document.body);
+	//update the interface
+	if(selectedText){
+		var _searchValue = selectedText.replace(/[\r\n].*/gi, "");
+		document.getElementById("strSearch").value = _searchValue;
+	}else{
+		var lastSavedSearch = utility.cookie.get("last_search");
+		document.getElementById("strSearch").value = lastSavedSearch || '';
+	}
+	document.getElementById("strSearch").focus();
+	document.getElementById("strSearch").select();
+}
+
+function openHelp(helpStr) {
+	ktml.toolbar.showHelp(helpStr);
+}</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body id="findreplace" class="ktml_dialog ktml_bg" 
+	 onkeypress="return window_keyHandler(event)"
+	 onkeydown="return window_keyHandler(event)" 
+	 onLoad="init()">
+<table cellspacing="0" cellpadding="0" width="100%" height="100%" border="0">
+	<tr>
+		<td id="content">
+			<label for="strSearch" accesskey="n">||Find what:||</label>
+			<input class="ktml_input" type="text" name="strSearch" id="strSearch" value="" style="display: block;margin-bottom: 10px;">
+			<label for="strReplace" accesskey="p">||Replace with:||</label>
+			<input class="ktml_input" type="text" name="strReplace" id="strReplace" value="" style="display: block;margin-bottom: 10px;">
+			<label for="cbMatchCase" style="display: block"><input type="checkbox" name="cbMatchCase" id="cbMatchCase"> ||Match case||</label>
+			<label for="cbMatchWord" style="display: block"><input type="checkbox" name="cbMatchWord" id="cbMatchWord"> ||Match whole word only||</label>
+		</td>
+		<td id="buttons" style="text-align: center">
+			<input type="button" name="btnFind" id="btnFind" accesskey="f" onClick="textFound = _GOFIND(ktml, false, false);" value="||Find Next||" />
+			<input type="button" name="btnReplace" id="btnReplace" accesskey="r" onClick="replacetext(ktml, false);" value="||Replace||" />
+			<input type="button" name="btnReplaceAll" id="btnReplaceAll" accesskey="a" onClick="replacetext(ktml, true);" value="||Replace All||" />
+			<input type="button" name="btnCancel" onClick="utility.window.close()" value="||Cancel||" />
+			<img class="hsep" src="../../core/img/sep2.gif" src="g" style="width: 68px; margin: 7px 0 5px 0">
+			<input type="button" name="openHelp" onClick="openHelp('findreplace_window')" value="||Help||" />
+		</td>
+	</tr>
+</table>
+</body>
+</html>

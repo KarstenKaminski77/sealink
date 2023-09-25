@@ -1,0 +1,285 @@
+Code,Description,CAS Code,CAS Description
+*513892,Blender,FOD_BLEN,Brazilian Blender
+*513913,Ambiant Display Unit,FOD_ABDU,Ambiant Display Unit
+*514014,Cake Display Unit,FOD_CAKE,Cake Display Unit
+*514225,Grinder,FOD_GRIN,Brazilian Grinder
+*514236,Pie Warmer,FOD_PIEW,Pie Display Warmer Unit
+*514562,Prover,FOD_PROV,Prover
+*514838,Lightning and Surge Protection,ELC_LASP,Lightning and Surge Protection
+*515673,Pipework Dip Cap,FSY_PIPE,Pipework
+ATTAG,Attendants Tagging,FSY_DISP,Dispenser
+EQ001,Graffiti Re-painting Set,BLD_ANCY,Ancillary
+EQ002,Painting,BLD_ANCY,Ancillary
+EQ003,Pest Control,BLD_ANCY,Ancillary
+EQ005,Canopy,BLD_CAN,Canopy
+EQ007,Canopy Ceiling,BLD_CAN,Canopy
+EQ008,Canopy Roof,BLD_CAN,Canopy
+EQ010,Canopy Stanchion,BLD_CAN,Canopy
+EQ013,HGV Canopy,BLD_CAN,Canopy
+EQ014,HGV Canopy Ceiling,BLD_CAN,Canopy
+EQ015,HGV Canopy Roof,BLD_CAN,Canopy
+EQ016,HGV Canopy Stanchion,BLD_CAN,Canopy
+EQ017,Carwash Bay Heaters,BLD_CAR,Carwash Building
+EQ018,Carwash Building,BLD_CAR,Carwash Building
+EQ019,Carwash Floor,BLD_CAR,Carwash Building
+EQ020,Carwash Floor Leak Tight Surface,BLD_CAR,Carwash Building
+EQ021,Carwash Floor Tiles,BLD_CAR,Carwash Building
+EQ022,Carwash Wall,BLD_CAR,Carwash Building
+EQ023,Carwash Wall Tiles,BLD_CAR,Carwash Building
+EQ024,Washbox / Jetwash Building,BLD_CAR,Carwash Building
+EQ028,Restroom,BLD_DOM,Restroom
+EQ029,Restroom building Ceiling,BLD_DOM,Restroom
+EQ030,Restroom building Floor,BLD_DOM,Restroom
+EQ031,Restroom building Floor Tiles,BLD_DOM,Restroom
+EQ032,Restroom building Wall,BLD_DOM,Restroom
+EQ033,Restroom building Wall Tiles,BLD_DOM,Restroom
+EQ034,Carwash Automatic Door Controls,BLD_DOOR,Doors
+EQ035,Carwash Main Doors,BLD_DOOR,Doors
+EQ036,External Security Door,BLD_DOOR,Doors
+EQ037,Internal General Door,BLD_DOOR,Doors
+EQ038,Internal Security Doors,BLD_DOOR,Doors
+EQ039,Shop Automatic Door Controls,BLD_DOOR,Doors
+EQ040,Shop Automatic Doors,BLD_DOOR,Doors
+EQ041,Shop Entrance Sliding / Normal Doors,BLD_DOOR,Doors
+EQ042,Workshop Main Doors,BLD_DOOR,Doors
+EQ043,Workshop Roller Doors,BLD_DOOR,Doors
+EQ046,General Pipework and Fittings,BLD_PLUM,Plumbing
+EQ047,Showers,BLD_PLUM,Plumbing
+EQ048,Sinks and Basins,BLD_PLUM,Plumbing
+EQ049,Toilets and Sanitary ware,BLD_PLUM,Plumbing
+EQ050,Water Softener,BLD_PLUM,Plumbing
+EQ051,Building Ceilings,BLD_ROOF,Roof
+EQ052,Car Wash Building Roof,BLD_ROOF,Roof
+EQ053,External Storage Building Roof,BLD_ROOF,Roof
+EQ054,Fall Arrest system,BLD_ROOF,Roof
+EQ055,Guttering and downpipes,BLD_ROOF,Roof
+EQ056,Restroom Building Roof,BLD_ROOF,Roof
+EQ057,Shop / Sales Building Roof,BLD_ROOF,Roof
+EQ058,Workshop Building Roof,BLD_ROOF,Roof
+EQ059,Shop / Sales Building,BLD_SHOP,Shop / Sales Building
+EQ060,Shop Fittings and Fixtures,BLD_SHOP,Shop / Sales Building
+EQ061,Shop Floor,BLD_SHOP,Shop / Sales Building
+EQ062,Shop Floor Tiles,BLD_SHOP,Shop / Sales Building
+EQ063,Shop Suspended Ceiling,BLD_SHOP,Shop / Sales Building
+EQ064,Shop Wall,BLD_SHOP,Shop / Sales Building
+EQ065,Shop Wall Tiles,BLD_SHOP,Shop / Sales Building
+EQ066,External Storage building,BLD_STOR,External Storage building
+EQ067,External Storage building Ceiling,BLD_STOR,External Storage building
+EQ068,External Storage building Floor,BLD_STOR,External Storage building
+EQ069,External Storage building Wall,BLD_STOR,External Storage building
+EQ070,General Windows,BLD_WIND,Windows
+EQ071,Shop Front Windows,BLD_WIND,Windows
+EQ072,Workshop,BLD_WKSP,Workshop Building
+EQ073,Workshop Building Ceiling,BLD_WKSP,Workshop Building
+EQ074,Workshop Building Floor,BLD_WKSP,Workshop Building
+EQ075,Workshop Building Wall,BLD_WKSP,Workshop Building
+EQ076,Workshop Floor Leak Tight Surface,BLD_WKSP,Workshop Building
+EQ097,Intercom system (PA),CON_COM,Communications Systems
+EQ100,Forecourt Controller System,CON_FCC,Forecourt Controller System
+EQ123,Clean Water Drainage,DRN_CW,Clean Water Drainage
+EQ124,Clean Water Drainage Grate Cover,DRN_CW,Clean Water Drainage
+EQ125,Effluent Treatment Plant,DRN_ETP,Effluent Treatment Plant
+EQ126,Foul Water Drainage,DRN_FW,Foul Water Drainage
+EQ127,Foul Water Drainage Grate Cover,DRN_FW,Foul Water Drainage
+EQ128,Interceptors,DRN_INCP,Interceptors
+EQ131,Pumping Station,DRN_PMP,Pumping Station
+EQ132,Sewage Displacement. Pressure system,DRN_PRES,Sewage Displacement. Pressure system
+EQ133,Sewage Displacement. Pressure Pump,DRN_PUMP,Sewerage Displacement Pump
+EQ134,Septic Tank,DRN_SEPT,Septic Tank
+EQ135,Sludge Trap,DRN_SLUD,Sludge Trap
+EQ137,Car Wash Building Power Supplies,ELC_DIST,Distribution Systems
+EQ138,Car Wash System Power Supplies,ELC_DIST,Distribution Systems
+EQ139,Forecourt Power Supplies,ELC_DIST,Distribution Systems
+EQ140,Fridge and Freezer Power Supplies,ELC_DIST,Distribution Systems
+EQ141,Fuel System Power Supplies,ELC_DIST,Distribution Systems
+EQ142,General Power Outlets,ELC_DIST,Distribution Systems
+EQ143,POS / BOS System Power Supplies,ELC_DIST,Distribution Systems
+EQ144,Shop / Sales Building Power Supplies,ELC_DIST,Distribution Systems
+EQ145,Site Electrical Distribution Board,ELC_DIST,Distribution Systems
+EQ146,Site Power Supplies,ELC_DIST,Distribution Systems
+EQ147,Workshop Building Power Supplies,ELC_DIST,Distribution Systems
+EQ148,"Cable Systems, Trunking and Tray",ELC_DUCT,Ductwork
+EQ149,Earthing Systems,ELC_ERTH,Earthing Systems
+EQ151,Automatic Lighting Systems,ELC_LGHT,Lighting Systems
+EQ152,Canopy Fascia Electrical / Lighting Unit,ELC_LGHT,Lighting Systems
+EQ153,Canopy Lighting,ELC_LGHT,Lighting Systems
+EQ154,Canopy Soffit Lighting,ELC_LGHT,Lighting Systems
+EQ155,Car Wash Building Lighting,ELC_LGHT,Lighting Systems
+EQ156,Car Wash Directional Sign Electrical / Lighting Unit,ELC_LGHT,Lighting Systems
+EQ157,Car Wash Instruction Sign Electrical / Lighting Unit,ELC_LGHT,Lighting Systems
+EQ158,Car Wash Menu Sign Electrical / Lighting Unit,ELC_LGHT,Lighting Systems
+EQ159,Dispenser Mounted Spreaderbox Electrical / Lighting Unit,ELC_LGHT,Lighting Systems
+EQ160,External Security Lighting,ELC_LGHT,Lighting Systems
+EQ161,External Storeroom Lighting,ELC_LGHT,Lighting Systems
+EQ162,Flag Sign Electrical / Lighting Unit,ELC_LGHT,Lighting Systems
+EQ163,Forecourt Traffic Direction Sign Electrical / Lighting Unit,ELC_LGHT,Lighting Systems
+EQ164,Information Sign Electrical / Lighting Unit,ELC_LGHT,Lighting Systems
+EQ165,Internal Lighting,ELC_LGHT,Lighting Systems
+EQ166,Monolith Electrical / Lighting Unit,ELC_LGHT,Lighting Systems
+EQ167,Motorway Price Sign Electrical / Lighting Unit,ELC_LGHT,Lighting Systems
+EQ168,Pole Sign Electrical / Lighting Unit,ELC_LGHT,Lighting Systems
+EQ169,Poster Sign Electrical / Lighting Unit,ELC_LGHT,Lighting Systems
+EQ170,Pylon Sign Electrical / Lighting Unit,ELC_LGHT,Lighting Systems
+EQ171,Restaurant Menu-Board Electrical / Lighting Unit,ELC_LGHT,Lighting Systems
+EQ172,Restroom Building Lighting,ELC_LGHT,Lighting Systems
+EQ173,Shop / Sales Building Lighting,ELC_LGHT,Lighting Systems
+EQ174,Shop Display Freezer Electrical / Lighting Systems,ELC_LGHT,Lighting Systems
+EQ175,Shop Display Fridge Electrical / Lighting Systems,ELC_LGHT,Lighting Systems
+EQ176,Shop Pod Sign Electrical / Lighting Unit,ELC_LGHT,Lighting Systems
+EQ177,Shop Portico Sign Electrical / Lighting Unit,ELC_LGHT,Lighting Systems
+EQ178,Shop Product / Advertising Electrical / Lighting Unit,ELC_LGHT,Lighting Systems
+EQ179,Site Entrance / Direction Sign Electrical / Lighting Unit,ELC_LGHT,Lighting Systems
+EQ180,Site Name Sign Electrical / Lighting Unit,ELC_LGHT,Lighting Systems
+EQ181,Slim Line (Low Level Price) Sign Electrical / Lighting Unit,ELC_LGHT,Lighting Systems
+EQ182,Snack / Food Display  Sign Electrical / Lighting Unit,ELC_LGHT,Lighting Systems
+EQ183,Spreaderbox Sign Electrical / Lighting Unit,ELC_LGHT,Lighting Systems
+EQ184,Stanchion Mounted Spreaderbox Electrical / Lighting Unit,ELC_LGHT,Lighting Systems
+EQ185,Tanker Discharge Area Electrical / Lighting Unit,ELC_LGHT,Lighting Systems
+EQ186,Utility / Storeroom Freezer Electrical / Lighting Systems,ELC_LGHT,Lighting Systems
+EQ187,Utility / Storeroom Fridge Electrical / Lighting Systems,ELC_LGHT,Lighting Systems
+EQ188,Workshop Building Lighting,ELC_LGHT,Lighting Systems
+EQ189,Electrical Transformers,ELC_PWR,Power Supplies
+EQ190,Power Generator,ELC_PWR,Power Supplies
+EQ193,Site Main Uninterruptible Power Supply,ELC_UPS,Uninterruptible power supply
+EQ194,Voltage Regulator / Line Conditioner,ELC_UPS,Uninterruptible power supply
+EQ197,Boundary Fence,FCT_BOUN,Boundary
+EQ198,Boundary Walls,FCT_BOUN,Boundary
+EQ199,Crash Barrier,FCT_BOUN,Boundary
+EQ200,Leak Tight Tanker Discharge Area,FCT_DISC,Tanker Discharge Area
+EQ201,Tanker Discharge Area,FCT_DISC,Tanker Discharge Area
+EQ202,Dispenser Island,FCT_FILL,Vehicle Refuelling Area
+EQ203,Leak Tight Vehicle Refuelling Area,FCT_FILL,Vehicle Refuelling Area
+EQ204,Vehicle Refuelling Area,FCT_FILL,Vehicle Refuelling Area
+EQ205,HGV Lanes,FCT_HGV,Truck Lanes
+EQ206,Leak Tight HGV Lanes,FCT_HGV,Truck Lanes
+EQ207,Kerbing,FCT_KERB,Kerbing
+EQ208,Landscaping,FCT_LAND,Landscaping
+EQ210,Car Parking Area,FCT_PARK,Car Parking Area
+EQ211,Car Parking Area Canopy,FCT_PARK,Car Parking Area
+EQ212,Security Lighting Columns,FCT_PARK,Car Parking Area
+EQ213,Manhole and Covers,FCT_SURF,Surface / Pavement
+EQ214,Pavement Stones,FCT_SURF,Surface / Pavement
+EQ215,Road and Lane Markings,FCT_SURF,Surface / Pavement
+EQ216,Road Surfaces,FCT_SURF,Surface / Pavement
+EQ217,Leak Tight Wall,FCT_TIGH,Leak Tight Wall
+EQ223,Coffee Machines,FOD_COFF,Coffee Dispenser
+EQ230,Ice Dispenser,FOD_CRUS,Ice Dispenser
+EQ231,Hot Dog Roller Grill,FOD_DOG,Hot Dog Roller Grill
+EQ233,Extraction Unit,FOD_EXUN,Extraction Unit
+EQ234,Extraction Unit Filters,FOD_EXUN,Extraction Unit
+EQ236,Fat Extractor,FOD_FAT,Fat Extractor
+EQ237,Food Counters,FOD_FCNT,Counter
+EQ238,Sales Counters,FOD_FCNT,Counter
+EQ239,Deep Fryer,FOD_FRY,Fryer
+EQ240,Heating Plate,FOD_HOT,Heating Plate
+EQ241,Juice Dispensers,FOD_JUIC,Juice Dispensers
+EQ242,Microwaves,FOD_MICR,Microwaves
+EQ243,Bread Maker,FOD_MISC,Food Miscellaneous
+EQ246,Food Miscellaneous,FOD_MISC,Food Miscellaneous
+EQ247,General Kitchen Equipment,FOD_MISC,Food Miscellaneous
+EQ250,Newspaper / Product Stands,FOD_MISC,Food Miscellaneous
+EQ252,Ovens,FOD_OVEN,Ovens
+EQ257,Food Scales,FOD_SCAL,Food Scales
+EQ261,Dispenser (n),FSY_DISP,Dispenser
+EQ262,Dispenser Metering,FSY_DISP,Dispenser
+EQ263,Dispenser Power Supply,FSY_DISP,Dispenser
+EQ264,Fuelling Position (n),FSY_DISP,Dispenser
+EQ267,Tank Gauge Alarm,FSY_GAUG,Tank Gauge (ATG)
+EQ268,Tank Gauges,FSY_GAUG,Tank Gauge (ATG)
+EQ270,Ground Water Sampling Point,FSY_LEAK,Leak Detection System
+EQ273,Leak Detection System Pipework,FSY_LEAK,Leak Detection System
+EQ274,Leak Detection System Tanks,FSY_LEAK,Leak Detection System
+EQ275,Manhole Water Leak Detection,FSY_LEAK,Leak Detection System
+EQ276,Overfill Protection,FSY_OFP,Overfill Protection
+EQ277,Emergency Fuel Cut-off System,FSY_PIPE,Pipework
+EQ278,Fillingpoint Cover / Box,FSY_PIPE,Pipework
+EQ279,Pipework,FSY_PIPE,Pipework
+EQ280,Pipework Filler Cap,FSY_PIPE,Pipework
+EQ281,Pipework Line Testing,FSY_PIPE,Pipework
+EQ282,Fuel Systems Submersible Pump,FSY_SUB,Fuel Systems Submersible Pump
+EQ283,Fuel Tanks,FSY_TANK,Fuel Tanks
+EQ284,Tank - Tank and Line Testing,FSY_TANK,Fuel Tanks
+EQ288,Air Conditioning Units,HVC_AIR,Aircon Units
+EQ289,Air Curtain,HVC_AIR,Aircon Units
+EQ290,Electrical Ductwork / Cabling,HVC_DUCT,Ductwork
+EQ291,General Ventilation Fans,HVC_FANS,General Ventilation Fans
+EQ310,Canopy Fascia,PRM_CANO,Canopy Fascia
+EQ311,Red Bar equipped with LED Lighting,PRM_CANO,Canopy Fascia
+EQ312,Red Bar equipped with Tube  Lighting,PRM_CANO,Canopy Fascia
+EQ313,Building Fascia,PRM_FASC,Prime Fascia
+EQ314,Flag Sign Fascia,PRM_FASC,Prime Fascia
+EQ315,Monoltih Fascia,PRM_FASC,Prime Fascia
+EQ316,Motorway Price Sign Fascia,PRM_FASC,Prime Fascia
+EQ317,Pole Sign Fascia,PRM_FASC,Prime Fascia
+EQ318,Pylon Sign Fascia,PRM_FASC,Prime Fascia
+EQ320,Flag Sign,PRM_FLAG,Flag Sign
+EQ321,Monolith,PRM_MONO,Prime Sign
+EQ322,General Price Sign Price Change Unit,PRM_PCU,Price Control Unit
+EQ323,Monolith Price Change Unit,PRM_PCU,Price Control Unit
+EQ324,Motorway Sign Price Change Unit,PRM_PCU,Price Control Unit
+EQ325,Price Control Unit Electrical,PRM_PCU,Price Control Unit
+EQ326,Price Control Unit Remote Control Unit,PRM_PCU,Price Control Unit
+EQ327,Slim Line (Low Level Price) Price Change Unit,PRM_PCU,Price Control Unit
+EQ328,Pole Sign,PRM_POLE,Pole Sign
+EQ329,Building Porticos,PRM_PORT,Porticos
+EQ332,Pylon Sign ( Above 14 Mtrs ),PRM_PYLO,Pylon Sign ( Above 14 Mtrs )
+EQ335,Fridge Condensing Unit,REF_COMP,Condensing Unit
+EQ336,Freezer Condensing Unit,REF_COMP,Condensing Unit
+EQ337,Outside Display Freezers,REF_FREZ,Freezers
+EQ338,Shop Display Freezers,REF_FREZ,Freezers
+EQ339,Utility / Storeroom Freezers,REF_FREZ,Freezers
+EQ340,Shop Display Fridges,REF_FRID,Fridges
+EQ341,Utility / Storeroom Fridges,REF_FRID,Fridges
+EQ351,Counter Safety (Bullet Proof Area),SAF_CNTR,Counter Safety (Bullet Proof Area)
+EQ353,Fire Equipment,SAF_FIRE,Fire Equipment
+EQ354,Sprinkler System,SAF_FIRE,Fire Equipment
+EQ357,Car Wash Door Locks,SAF_LOCK,Locks
+EQ358,Digital / Keypad Locks,SAF_LOCK,Locks
+EQ359,Electrical Locks,SAF_LOCK,Locks
+EQ360,External Security Door Locks,SAF_LOCK,Locks
+EQ361,General Key Locks,SAF_LOCK,Locks
+EQ362,Internal non-security door locks,SAF_LOCK,Locks
+EQ363,Office Digital / Keypad Locks,SAF_LOCK,Locks
+EQ364,Remote Locks,SAF_LOCK,Locks
+EQ365,Shop Automatic Door Locks,SAF_LOCK,Locks
+EQ366,Shop Entrance Sliding / Normal Door Locks,SAF_LOCK,Locks
+EQ367,Staff Security Case Digital / Keypad Locks,SAF_LOCK,Locks
+EQ368,Workshop Main / Roller Door Locks,SAF_LOCK,Locks
+EQ370,Anti-Ram Bollards,SAF_RAM,Anti-Ram Bollards
+EQ371,Change Dump Safe,SAF_SAFE,Safes
+EQ372,Safes,SAF_SAFE,Safes
+EQ377,Car Wash Bollards,SEC_CWBO,Car Wash Bollards
+EQ378,Car Wash Directional Signs,SEC_CWDR,Car Wash Directional Signs
+EQ379,Car Wash Instruction Signs,SEC_CWIN,Car Wash Instruction Signs
+EQ381,Direction Signs,SEC_DIR,Direction Signs
+EQ382,Entry/Exit Lighting Columns,SEC_ENTY,Entry/Exit Signs
+EQ383,Entry/Exit Signs,SEC_ENTY,Entry/Exit Signs
+EQ384,Dispenser Signs - Grade / Product,SEC_GRAD,ID Tags
+EQ385,Pipework Filler Cap Product Label,SEC_GRAD,ID Tags
+EQ386,Tank Signs - Grade / Product,SEC_GRAD,ID Tags
+EQ387,Information / Facility Sign,SEC_INFO,Infor./Facility Sign
+EQ388,Spreader Boxes,SEC_LBOX,Spreader Boxes
+EQ389,Leader Boards,SEC_LEAD,Leader Boards
+EQ390,Advertising Monitors (Video / CD / DVD display units),SEC_MISC,Miscellaneous Signs
+EQ392,Flag,SEC_MISC,Miscellaneous Signs
+EQ393,Flag Pole,SEC_MISC,Miscellaneous Signs
+EQ394,Miscellaneous Signs,SEC_MISC,Miscellaneous Signs
+EQ396,Site Name Signs,SEC_NAME,Name Signs
+EQ398,Safety/Warning Stickers,SEC_NOTE,Safety/Warning Stickers
+EQ399,Dispenser Signs - Nozzles,SEC_NOZZ,Dispenser Signs - Nozzles
+EQ400,Poster Frames,SEC_POST,Poster Frames
+EQ401,Rotating Poster Display,SEC_POST,Poster Frames
+EQ403,Glove Dispenser,SEC_SERV,Service Unit/Waste Bin
+EQ404,Paper Towel Dispenser,SEC_SERV,Service Unit/Waste Bin
+EQ405,Service Unit,SEC_SERV,Service Unit/Waste Bin
+EQ406,Waste Bin,SEC_SERV,Service Unit/Waste Bin
+EQ412,Water Recycling/Reclaim  Units,VLT_CIRC,Water Reticulation System
+EQ424,Workshop Compressors,WRK_COMP,Compressors
+EQ429,Hydraulic Lifts,WRK_LIFT,Hoists
+EQ443,Fuel Spill Absorbant Material,BLD_ANCY,Ancillary
+EQ444,Drinking Water Well,BLD_ANCY,Ancillary
+EQ445,Water Filtration System,FOD_MISC,Food Miscellaneous
+EQ446,Canopy Fire Suppression System,SAF_FIRE,Fire Equipment
+EQ447,"Canopy ""Shell"" Logo Type",PRM_CANO,Canopy Fascia
+EQ448,Canopy Height Sign,SEC_MISC,Miscellaneous Signs
+EQ449,Restroom Automatic Door Controls (Disabled Persons),BLD_DOOR,Doors

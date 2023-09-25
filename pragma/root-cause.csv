@@ -1,0 +1,36 @@
+Code,Description
+ACC,Accidents
+CF,Contaminated Fuel
+COR,Corrosion
+CT,Contamination Transfer
+DES,Design
+DI,Dirt Ingress
+DRT,Dirty
+DTE,Down To Earth
+EMI,EM Interference
+EXEN,External or Environmental
+FC,Faulty Components
+FCON,Faulty Connection
+FP,Faulty Pipes
+FRO,Foreign Object
+FS,Faulty Setting
+FW,Faulty Wiring
+IC,Incompatible Components
+LS,Lighting Strikes
+LUB,Lubrication
+MA,Misalignment
+MF,Material Fatique
+MOIS,Moisture
+MU,Misuse
+NF,Tested; No Repair work required
+OC,Over Current
+OCH,Over Charge
+OLP,Overload/pressure
+PS,Power Surges
+PW,Poor Workmanship
+RUND,Run Dry
+SC,Short Circuit
+UC,Under Charge
+VAN,Vandalism
+VIB,Vibration
+WT,Normal Wear and Tear

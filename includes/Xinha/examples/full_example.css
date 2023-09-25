@@ -1,0 +1,54 @@
+.combo {
+    font-family:arial;
+	font-size:12px;
+	color:#756D5A;
+	line-height:20px;
+}
+.combo_black {
+    font-family:arial;
+	font-size:12px;
+	color:#000000;
+	line-height:20px;
+}
+.combo_orange {
+    color:#E0700A;
+    font-family:arial;
+	font-size:12px;
+	line-height:20px;
+}
+.header_brown {
+	font-family: arial;
+	font-size: 16px;
+	font-weight: bold;
+	color: #6A5E44;
+}
+.header_orange {
+	font-family: arial;
+	font-size: 16px;
+	font-weight: bold;
+	color: #E0700A;
+}
+.header_black {
+	font-family: arial;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+}
+.bold_brown {
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #6A5E44;
+}
+.bold_black {
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+}
+.bold_orange {
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #E0700A;
+}

@@ -1,0 +1,53 @@
+body {
+	font: normal 14px "Microsoft Sans Serif",Tahoma,Arial,Verdana,sans-serif;
+	background-color: buttonface;
+	margin: 0px;
+}
+.ktml_button {
+	font: normal 11px "Microsoft Sans Serif",Tahoma,Arial,Verdana,sans-serif;
+	width: 80px;
+}
+
+#header {
+	width: 100%;
+	margin: 10px auto;
+}
+.topic_hidden {
+	display:none;
+	height: 242px;
+	background-color: #ffffff;
+	padding: 10px 10px;
+	overflow: auto;
+	text-align: justify;
+}
+.main {
+	height: 250px;
+	background-color: #ffffff;
+	padding: 10px 10px;
+	overflow: auto;
+	text-align: justify;
+}
+.footer {
+	width: 94%;
+	height: 30px;
+	text-align: center;
+	padding:10px;
+}
+
+.title {
+	font-weight: bold;
+}
+.content {
+	padding: 0px 20px;
+}
+
+.style1 {color: #FF6600}
+.style2 {color: #000000}
+.style3 {color: #FF9900}
+.style5 {color: #FF6600; font-weight: bold; }
+.style6 {
+	color: #3399FF;
+	font-weight: bold;
+}
+.style9 {color: #669900}
+.style10 {color: #339900}

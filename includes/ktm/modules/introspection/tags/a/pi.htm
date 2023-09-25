@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>Link Properties</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script src="../../../../../common/js/base.js"></script>
+<script src="../../../../../common/js/utility.js"></script>
+<script src="../common.js"></script>
+<script>
+function callback_1() {
+	if (!ktmlObject.hasModule('filebrowser')) {
+		var node = document.getElementById("__objectName__LinkBrowse");
+		node.parentNode.removeChild(node);
+	}
+}
+</script>
+</head>
+<body onLoad="initializeUI('a', callback_1)">
+<div id="Properties_a___objectName__" class="property_body ktml_bg"> <nobr>
+  <table border="0" class="introspector">
+    <tr>
+      <td nowrap="nowrap" style="white-space: nowrap !important; text-align: left">||Introspection ID Label||:&nbsp;</td>
+      <td rowspan="2" nowrap="nowrap"><img ssrc="__relativeImagePath__/vspacer.gif" height="44" width="2" border="0" style="margin: 0px 3px"></td>
+      <td style="text-align: right">&nbsp;||Link Target||:&nbsp;</td>
+      <td><select class="ktml_select" 
+				style="width:100px"
+				help_topic_id="PI_link_target"
+				id="Properties_a_target___objectName__"
+				onChange="window['ktml___objectName__'].introspector.apply('target', this.value);"
+				onkeydown="return util_preventEvent(this, event);"
+				onkeypress="return util_preventEvent(this, event);">
+          <option value="">||Link Option normal||</option>
+          <option value="_blank">||Link Option newwindow||</option>
+          <option value="_top">||Link Option currentwindow||</option>
+          <option value="_self">||Link Option currentframe||</option>
+          <option value="_parent">||Link Option parentframe||</option>
+          <option value="custom">||Link Option customframe||</option>
+        </select></td>
+      <td style="text-align: right; white-space: nowrap !important" nowrap="nowrap">&nbsp;||Link Title||:&nbsp;</td>
+      <td style="text-align: right"><input type="text" 
+			class="ktml_input"
+			style="width:160px"
+			id="Properties_a_title___objectName__"
+			help_topic_id="PI_link_title"
+			onBlur="window['ktml___objectName__'].introspector.apply('title', this.value);"
+			onkeydown="return util_preventEvent(this, event);"
+			onkeypress="return util_preventEvent(this, event);"/></td>
+      <td><img ssrc="__relativeImagePath__/linkremove.gif"
+			alt="||Link Remove||"
+			border="0"
+			title="||Link Remove||"
+			help_topic_id="PI_link_remove"
+			onClick="if (window['ktml___objectName__'].toolbar.checkHelp(this, event)) { return; } window['ktml___objectName__'].logic_doFormat('RemoveLink');"
+			kttype="btn"
+			__evstr__ /></td>
+    </tr>
+    <tr>
+      <td nowrap="nowrap" style="text-align:left"><input name="Properties_a_id___objectName__"
+			tabindex="1"
+			type="text"
+			class="ktml_input"
+			id="Properties_a_id___objectName__"
+			help_topic_id="PI_link_id"
+			onBlur="window['ktml___objectName__'].introspector.apply('id', this.value);"
+			onKeyPress="return util_preventEvent(this, event);"
+			size="12"/></td>
+      <td style="text-align: right">&nbsp;||Link Href||:&nbsp;</td>
+      <td colspan="3"><input type="text"
+			class="ktml_input"
+			style="width:300px;"
+			id="Properties_a_href___objectName__"
+			help_topic_id="PI_link_href"
+			onkeydown="return util_preventEvent(this, event);"
+			onkeypress="return util_preventEvent(this, event);"
+			onBlur="window['ktml___objectName__'].introspector.apply('href', this.value);" /></td>
+      
+      <td><img ssrc="__relativeImagePath__/dir.gif"
+			alt="||Link Browse||"
+			border="0"
+			title="||Link Browse||"
+			help_topic_id="PI_link_href"
+			id="Properties_a_href_browse___objectName__"
+			onClick="if (window['ktml___objectName__'].toolbar.checkHelp()){return;}window['ktml___objectName__'].openSelectFile({submode:'file', filter:'documents', submode_detail:'forceurl', callback:[window['ktml___objectName__'], 'insertHTMLElement']});"
+			kttype="btn"
+			__evstr__/></td>
+    </tr>
+  </table>
+  </nobr> </div>
+</body>
+</html>

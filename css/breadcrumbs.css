@@ -1,0 +1,180 @@
+.breadcrumb {
+	list-style: none;
+	overflow: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 35px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	font-weight: bold;
+	overflow: hidden;
+	height: 35px;
+}
+.breadcrumb li { 
+	float: left; 
+}
+.breadcrumb li a {
+	color: white;
+	text-decoration: none;
+	background: #004c80;                   /* fallback color */
+	background: hsla(204, 100%, 25%, 1);
+	position: relative;
+	display: block;
+	float: left;
+	padding-top: 0px;
+	padding-right: 0;
+	padding-bottom: 0px;
+	padding-left: 55px;
+}
+.breadcrumb li a:after { 
+	content: " "; 
+	display: block; 
+	width: 0; 
+	height: 0;
+	border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+	border-bottom: 50px solid transparent;
+	border-left: 30px solid hsla(204, 100%, 25%, 1);
+	position: absolute;
+	top: 50%;
+	margin-top: -50px; 
+	left: 100%;
+	z-index: 2; 
+}	
+.breadcrumb li a:before { 
+	content: " "; 
+	display: block; 
+	width: 0; 
+	height: 0;
+	border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+	border-bottom: 50px solid transparent;
+	border-left: 30px solid white;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px; 
+	margin-left: 1px;
+	left: 100%;
+	z-index: 1; 
+}	
+.breadcrumb li:first-child a {
+	padding-left: 10px;
+}
+.breadcrumb li:nth-child(2) a       { background:        hsla(204, 100%, 35%, 1); }
+.breadcrumb li:nth-child(2) a:after { border-left-color: hsla(204, 100%, 35%, 1); }
+.breadcrumb li:nth-child(3) a       { background:        hsla(204, 100%, 45%, 1); }
+.breadcrumb li:nth-child(3) a:after { border-left-color: hsla(204, 100%, 45%, 1); }
+.breadcrumb li:nth-child(4) a       { background:        hsla(204, 100%, 55%, 1); }
+.breadcrumb li:nth-child(4) a:after { border-left-color: hsla(204, 100%, 55%, 1); }
+.breadcrumb li:nth-child(5) a       { background:        hsla(204, 100%, 65%, 1); }
+.breadcrumb li:nth-child(5) a:after { border-left-color: hsla(204, 100%, 65%, 1); }
+.breadcrumb li:last-child a {
+	background: white !important;
+	color: black;
+	pointer-events: none;
+	cursor: default;
+}
+.breadcrumb li:last-child a:after { border: 0; }
+.breadcrumb li a:hover { background: #004c80; }
+.breadcrumb li a:hover:after { border-left-color: #004c80 !important; }
+
+.td-bread {
+	margin-bottom: 20px;
+	width: 750px;
+	height: 35px;
+	float: left;
+}
+
+.search-container {
+	margin-bottom: 20px;
+	float: right;
+	width: 190px;
+	height: 35px;
+	margin-top: 10px;
+}
+
+a.search-container {
+	width: 190px;
+	height: 35px;
+	display:block;
+	background-color:#19446f;
+	line-height:35px;
+	font-size:14px;
+	color:#FFF;
+	text-align:center;
+	text-decoration:none;
+	font-weight:bold;
+	margin:0 !important;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;}
+
+.search-top {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #1a446f;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border: 1px solid #1a446f;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	margin-right: 0px;
+	outline: none;
+	width: calc(100% - 57px);
+	height: 23px;
+	float: left;
+}
+
+.search-top-btn{
+	width: 35px;
+	height: 35px;
+	border: none;
+	background-image: url(../images/icons/search.png);
+	border: 1px solid #1a446f;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: #1a446f;
+	padding: 0;
+	margin: 0;
+	float: left;
+	background-position: center top;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.search-orders-btn{
+	width: 26px;
+	height: 26px;
+	border: none;
+	background-image: url(../images/icons/search-small-orders.png);
+	border: 1px solid #1a446f;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #1a446f;
+	padding: 0;
+	margin: 0;
+	float: left;
+	background-position: center top;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.search-top-btn:hover{
+	background-position: center -35px;
+}

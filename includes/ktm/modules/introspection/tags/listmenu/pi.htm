@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Menu Properties</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script src="../../../../../common/js/base.js"></script>
+<script src="../../../../../common/js/utility.js"></script>
+<script src="../common.js"></script>
+</head>
+<body onLoad="initializeUI('listmenu')">
+<div id="Properties_listmenu___objectName__" class="property_body ktml_bg"> <nobr>
+  <table border="0" class="introspector">
+    <tr>
+      <td nowrap="nowrap" style="white-space: nowrap !important; text-align: left">||Introspection ID Label||:&nbsp;</td>
+      <td rowspan="2" nowrap="nowrap" style="white-space: nowrap !important;"><img ssrc="__relativeImagePath__/vspacer.gif" 
+					height="44" width="2" border="0" style="margin: 0px 3px"></td>
+      <td nowrap="nowrap" style="white-space: nowrap !important; text-align: right">&nbsp;||Type||:&nbsp;</td>
+      <td nowrap="nowrap"><label style="white-space: nowrap !important;" for="Properties_listmenu_type___objectName___menu"
+			  			class="introspection_label">
+        <input name="Properties_listmenu_type___objectName___"
+			  					type="radio"
+			  					id="Properties_listmenu_type___objectName___menu"
+			  					help_topic_id="PI_listmenu_type"
+			  					onclick="window['ktml___objectName__'].introspector.apply('type', this.value);"
+			  					value="menu" checked="true">
+        &nbsp;||Menu||&nbsp;</label></td>
+      <td style="text-align: right" nowrap="nowrap"><label style="white-space: nowrap !important" id="Properties_listmenu_size_label___objectName__" 
+						disabled="true" for="Properties_listmenu_size___objectName__"
+						class="introspection_label">&nbsp;||Height||:&nbsp;</label></td>
+      <td nowrap="nowrap" style="white-space: nowrap !important;"><input name="Properties_listmenu_size___objectName__"
+						disabled="true"
+						type="text"
+						class="ktml_input"
+						style="width: 105px"
+						id="Properties_listmenu_size___objectName__"
+						onBlur="if(!util_checkMeasureUnit(this, 1000)) { return false;};window['ktml___objectName__'].introspector.apply('size', this.value);"
+						help_topic_id="PI_listmenu_height"
+						onKeyPress="return util_preventEvent(this, event);"
+						size="6" maxlength="4"/>
+        &nbsp;</td>
+      <td nowrap="nowrap" style="white-space: nowrap !important; width: 100px"><input type="button" class="ktml_button"
+					help_topic_id="PI_listmenu_values"
+					onclick="if(window['ktml___objectName__'].toolbar.checkHelp()){return true;};utility.window.openWindow('_listvalues' + parseInt(Math.random()*1000000000), KtmlRoot + 'modules/introspection/tags/listmenu/listvalues.htm?id='+window['ktml___objectName__'].id + '&counter=' + window['ktml___objectName__'].counter, 380, 180);" 
+					value="||List Values||"/></td>
+    </tr>
+    <tr>
+      <td nowrap="nowrap"><input name="Properties_listmenu_id___objectName__"
+					type="text" 
+					class="ktml_input"
+					id="Properties_listmenu_id___objectName__"
+					onBlur="window['ktml___objectName__'].introspector.apply('id', this.value);"
+					help_topic_id="PI_listmenu_id"
+					onKeyPress="return util_preventEvent(this, event);"
+					size="12"/>
+        &nbsp;</td>
+      <td nowrap="nowrap">&nbsp;</td>
+      <td nowrap="nowrap"><label style="white-space: nowrap !important" for="Properties_listmenu_type___objectName___list"
+			 		class="introspection_label">
+        <input type="radio"
+			 				name="Properties_listmenu_type___objectName___" 
+			 				id="Properties_listmenu_type___objectName___list"
+			 				value="list"
+			 				help_topic_id="PI_listmenu_type"
+			 				onclick="window['ktml___objectName__'].introspector.apply('type', this.value);">
+        &nbsp;||List||&nbsp;</label></td>
+      <td colspan="2" align="right" style="white-space: nowrap !important" nowrap="nowrap"><label style="white-space: nowrap !important" for="Properties_listmenu_multiple___objectName__"
+					class="introspection_label"
+					id="Properties_listmenu_multiple_label___objectName__"
+					disabled="true">&nbsp;||Allow multiple selections||&nbsp;</label>
+        <input type="checkbox"
+						disabled="true"
+						name="Properties_listmenu_multiple___objectName__"
+						id="Properties_listmenu_multiple___objectName__"
+						help_topic_id="PI_listmenu_select"
+						onclick="window['ktml___objectName__'].introspector.apply('multiple', this.checked);"
+						value="multiple"/>
+        &nbsp;</td>
+      <td><div style="width: 100px">&nbsp;</div></td>
+    </tr>
+  </table>
+  </nobr> </div>
+</body>
+</html>

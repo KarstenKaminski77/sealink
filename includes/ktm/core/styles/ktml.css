@@ -1,0 +1,796 @@
+@import url("skin.css");
+
+.ktml table.toolbar input.toolbaritem_flat {
+	width: 20px !important;
+	height: 20px !important;
+	margin: 1px 3px !important;
+	border: 0px !important;
+	background-color: transparent;
+	cursor: default;
+}
+.ktml table.toolbar input.toolbaritem_outset {
+	width: 20px !important;
+	height: 20px !important;
+	margin: 0px 2px !important;
+	border:1px solid #08246B !important;
+	background-color: #D1D0E6;
+	cursor: default;
+}
+
+.ktml table.toolbar input.toolbaritem_inset {
+	width: 20px !important;
+	height: 20px !important;
+	margin: 0px 2px !important;
+	border: 1px solid #08246B !important;
+	cursor: default;
+}
+
+.ktml table.toolbar input.toolbaritem_disabled {
+	width: 20px !important;
+	height: 20px !important;
+	margin: 1px 3px !important;
+	border-width: 0px !important;
+	filter: alpha(opacity = 25) !important;
+	-moz-opacity: 0.3 !important;
+	cursor: default;
+}
+
+.ktml table.toolbar input.toolbaritem_latched {
+	width: 20px !important;
+	height: 20px !important;
+	margin: 0px 2px !important;
+	border: 1px solid #08246B !important;
+	background-color: #EEEEEE !important;
+	cursor: default;
+}
+/* than, we declare the style of KTML, itself 
+specific :: main dialog (ktml in page) */
+
+.ktml {
+}
+	/*
+	table.ktml
+		tr : toolbar
+		tr : main textarea + iframe
+		tr : tag inspector
+		tr: loading_pi (invisible) \ this is switch, either one or the other
+		tr: introspector		   /
+	 */
+	.ktml table.toolbar {
+		cursor: default;
+	}
+		/*
+		table.toolbar: 
+			tr
+				td : collapse button
+				td: toolbar area
+					* div.toolbargroup 
+						table.toolbar_icons
+							td.toolbar_left
+							td.toolbar_icon
+							td.toolbar_right
+		*/
+		/* ktml collapse toolbar button */
+		.ktml table tr td {
+			padding: 0px !important;
+		}
+		.ktml table.toolbar td.ktml_collapse {
+			background: #F7F7F7 url(../img/arrow_down.gif) no-repeat bottom !important;
+			padding: 0px;
+			border-right: 1px solid #A5A2A5;
+			width: 8px;
+			cursor: pointer;
+			margin:0px;
+		}
+
+
+			/* floater for hidden buttons */
+			.div_floater {
+				position:absolute; 
+				display:block;
+				left:0px;
+				top:0px;
+				border: 1px solid #636563;
+				background-color:#FFFBF7 !important;
+				font: menu;
+				width: 112px;
+			}
+				.div_floater .toolbaritem_inset,
+				.div_floater .toolbaritem_flat,
+				.div_floater .toolbaritem_outset,
+				.div_floater .toolbaritem_latched,
+				.div_floater .toolbaritem_disabled{
+				float: left;
+				}
+				.div_floater .ccontainer,
+				.div_floater .ccontainer_hover,
+				.div_floater .ccontainer_inset,
+				.div_floater .ccontainer_disabled{
+					clear: both;
+					margin: 2px 3px 2px 3px !important;
+					border: 1px solid #ffffff !important;
+				}
+				.div_floater .ccontainer_hover{
+					border: 1px solid #08246B !important;
+				}				
+				.div_floater div.open {
+					clear: both;
+					cursor: pointer;
+					cursor: hand;
+					text-align: center;
+					vertical-align: center;
+					height: 25px;
+					font-size:10px !important;
+					line-height: 25px;
+					border-width: 0px;
+					margin: 3px;
+					padding: 1px;
+				}
+				.div_floater img.sep {
+					width:100px;
+					height: 1px;
+					background-color: #A5A6A5 !important;
+				}
+				.div_floater div.highlight {
+					cursor: pointer;
+					cursor: hand;
+					text-align: center;
+					vertical-align: center;
+					height: 25px;
+					line-height: 25px;
+					background-color: #D1D0E6 !important;
+					border: 1px solid #08246B;
+					margin: 3px; padding: 0px;
+				}
+
+			/* floater for combo-button openable */
+			.div_openable {
+				position:absolute; 
+				display:block;
+				left:0px;
+				top:0px;
+				border: 1px solid #636563;
+				background-color:#FFFBF7 !important;
+				font: menu;
+				padding:3px;
+				/*width and height set in creator*/
+			}
+				.div_openable div.option {
+					font-size:11px;
+					line-height:13px;
+					cursor: pointer;
+					cursor: hand;
+					vertical-align: center;
+					border-width: 0px;
+					margin: 0px;
+					padding: 2px 4px;
+				}
+				.div_openable img.sep {
+					width: 96%;
+					height: 1px;
+					background-color: #A5A6A5;
+					margin: 2px 4px;
+				}
+				.div_openable div.highlight {
+					font-size:11px;
+					line-height:13px;
+					cursor: pointer;
+					cursor: hand;
+					vertical-align: center;
+					border: 1px solid #08246B;
+					margin: 0px;
+					padding: 1px 3px;
+				}
+#selection_marker {
+	display:block !important;
+	position:absolute;
+	left:-100px;
+}
+				/* Hyperlink chooser */
+.hyperlink_container {
+	position:absolute;
+	overflow:auto;
+
+	border: 1px solid #636563;
+	background-color:#FFFBF7;
+	font: menu;
+}
+.hyperlink_filter {
+	position:absolute;
+	top:2px; left:2px;
+	height:13px;
+	font:menu;
+	border:1px solid black;
+	padding:1px 1px 1px 2px;
+}
+
+ul.hyperlink_list {
+	position:absolute;
+	top:21px; left:2px;
+	overflow:hidden;
+	margin:0px;
+	padding:0px;
+	cursor: default;
+	border:1px solid black;
+}
+ul.hyperlink_list li {
+	list-style-type:none;
+	width:auto;
+	white-space: nowrap;
+}
+
+ul.hyperlink_list li.li_highlight {
+	background-color: #D1D0E6;
+}
+
+ul.hyperlink_list .hyperlink_title {
+	padding: 2px 2px 2px 4px;
+}
+ul.hyperlink_list .hyperlink_url {
+	padding: 2px 2px 2px 20px;
+	color:blue;
+	text-decoration:underline;
+}
+.filter_str_match {
+	font-weight:bold;
+}
+				/* insert table like msword dialog*/
+				.insert_table_dialog {
+					position:absolute; 
+					overflow:auto;
+					left:135px; 
+					top:12px; 
+					width:148px; 
+					height:174px; 
+					border:1px solid #636563;
+					padding:0px;
+					background-color:#FFFBF7;
+					display:none;
+				}
+				.insert_table_dialog .square_white_shadow {
+					position:absolute; 
+					top:4px; 
+					left:4px; 
+					margin:0px; 
+					height:0px; 
+					width:0px;
+					background-color:white;
+					overflow: hidden;
+				}
+				.insert_table_dialog .square_shadow {
+					position:absolute; 
+					top:4px; 
+					left:4px; 
+					margin:0px; 
+					height:0px; 
+					width:0px;
+					background-color:blue;
+					overflow: hidden;
+				}
+				.insert_table_dialog .square_mask {
+					position:absolute; 
+					top:4px; 
+					left:4px; 
+					margin:0px; 
+					height:140px; 
+					width:140px;
+					background-image:url(../img/insert_table_cell.gif);
+				}
+				.insert_table_dialog .drg_info {
+					text-align:center;
+					padding:0px;
+				
+					position:absolute;
+					bottom: 0px;
+					left:4px;
+					width:140px;
+					height:20px;
+				}
+
+			/* toolbar row container */
+			.ktml table.toolbar .toolbar_table {
+			}
+			.ktml table.toolbar td.toolbar_row_td {
+				padding: 0px !important;
+				margin: 0px !important;
+			}
+			/* toolbar group countainer */
+			.ktml table.toolbar div.toolbar_group {
+				padding: 2px 3px !important;
+				margin: 0px !important;
+				border:0px solid black;
+				zbackground-color:red;
+				height:26px !important;
+			}
+
+				/* center table, that contains buttons in a group */
+					.ktml table.toolbar div.toolbar_group table.toolbar_icons {
+						margin: 0px !important;
+						border: 0px solid black !important;
+					}
+					/* left toolbar container div */
+					.ktml table.toolbar div.toolbar_group td.toolbar_left {
+						width: 6px;
+						padding: 0px;
+						margin: 0px; 
+						background-image:url(../img/toolbar_left.gif) !important;
+						background-repeat:no-repeat;
+						zbackground-color:blue;
+					}
+					/* right toolbar container div */
+					.ktml table.toolbar div.toolbar_group td.toolbar_right {
+						width: 13px;
+						padding: 0px;
+						margin: 0px;
+						background-image:url(../img/toolbar_right.gif) !important;
+						background-repeat: no-repeat;
+						zbackground-color:red;
+					}
+				.ktml table.toolbar div.toolbar_group td.toolbar_icon_td {
+						background-image:url(../img/toolbar_bg.gif) !important;
+						background-repeat:repeat-x !important;
+						padding:0px !important;
+						border:0px solid black !important;
+				}
+					.ktml table.toolbar div.toolbar_group div.toolbar_icon_container{
+						padding:2px 2px 2px 2px;
+						margin:0px;
+						border:0px solid black;
+						overflow: hidden;
+						height: 22px !important;
+						zbackground-color:lime;
+					}
+
+					/* toolbar buttons  */
+					.ktml table.toolbar img.toolbaritem_flat,
+					.div_floater img.toolbaritem_flat, 
+					.ktml table.introspector img.toolbaritem_flat {
+						width: 16px;
+						height: 16px;
+						padding: 2px;
+						margin: 1px 3px;
+						border-width: 0px;
+					}
+					.ktml table.toolbar img.toolbaritem_disabled,
+					.div_floater img.toolbaritem_disabled, 
+					.ktml table.introspector img.toolbaritem_disabled {
+						width: 16px;
+						height: 16px;
+						padding: 2px;
+						margin: 1px 3px;
+						border-width: 0px;
+						filter: alpha(opacity = 25);
+						-moz-opacity: 0.3;
+					}
+					.ktml table.toolbar img.toolbaritem_outset,
+					.div_floater img.toolbaritem_outset, 
+					.ktml table.introspector img.toolbaritem_outset{
+						width: 16px;
+						height: 16px;
+						margin: 0px 2px;
+						padding: 2px;
+						border:1px solid #08246B;
+						background-color: #D1D0E6;
+					}
+					.ktml table.toolbar img.toolbaritem_inset,
+					.div_floater img.toolbaritem_inset, 
+					.ktml table.introspector img.toolbaritem_inset {
+						width: 16px;
+						height: 16px;
+						padding: 2px;
+						margin: 0px 2px;
+						border: 1px solid #08246B;
+					}
+					.ktml table.toolbar img.toolbaritem_latched,
+					.div_floater img.toolbaritem_latched, 
+					.ktml table.introspector img.toolbaritem_latched {
+						width: 16px;
+						height: 16px;
+						padding: 2px;
+						margin: 0px 2px;
+						border: 1px solid #08246B;
+						background-color: #EEEEEE;
+					}
+
+					.div_floater input.toolbaritem_flat, 
+					.ktml table.introspector input.toolbaritem_flat {
+						width: 20px;
+						height: 20px;
+						margin: 1px 3px;
+						border: 0px;
+						background-color: transparent;
+					}
+
+					.div_floater input.toolbaritem_disabled, 
+					.ktml table.introspector input.toolbaritem_disabled {
+						width: 20px;
+						height: 20px;
+						margin: 1px 3px;
+						border-width: 0px;
+						filter: alpha(opacity = 25);
+						-moz-opacity: 0.3;
+					}
+
+					.div_floater input.toolbaritem_outset, 
+					.ktml table.introspector input.toolbaritem_outset{
+						width: 20px;
+						height: 20px;
+						margin: 0px 2px;
+						border:1px solid #08246B;
+						background-color: #D1D0E6;
+					}
+
+					.div_floater input.toolbaritem_inset, 
+					.ktml table.introspector input.toolbaritem_inset {
+						width: 20px;
+						height: 20px;
+						margin: 0px 2px;
+						border: 1px solid #08246B;
+					}
+
+					.div_floater input.toolbaritem_latched, 
+					.ktml table.introspector input.toolbaritem_latched {
+						width: 20px;
+						height: 20px;
+						margin: 0px 2px;
+						border: 1px solid #08246B;
+						background-color: #EEEEEE;
+					}
+
+					.ktml table.toolbar .toolbar_ptext	{
+						font-family: "Microsoft Sans Serif",Tahoma,Arial,Verdana,sans-serif;
+						font-size: 11px;
+					}
+				
+					/* 
+						common :: html dropdown
+						span.lcontainer :container for everything
+							table (id theTable + id) :
+								tr
+									td : currently selected
+									td : arrow down (open) button
+							div.optcontainer : absoutely positioned
+								table : optContainerTable
+									tr
+										td : 
+											div.opt : option render
+					*/
+					.ktml table.toolbar .ktml_select, 
+					.div_floater .ktml_select {
+						width: 75px;
+					}
+
+					table.ccontainer {
+						font-size:12px !important;
+						margin: 2px 3px 2px 3px !important;
+						border-width: 0px !important;
+						cursor: default !important;
+					}
+
+					table.ccontainer_hover {
+						margin: 1px 2px 1px 2px !important;
+						border: 1px solid #08246B !important;
+						background-color: #D1D0E6 !important;
+					}
+					table.ccontainer_inset {
+						margin: 1px 2px 1px 2px !important;
+						border: 1px solid #08246B !important;
+					}
+					table.ccontainer_disabled {
+						font-size:12px !important;
+						margin: 2px 3px !important;
+						border-width: 0px !important;
+						cursor: default !important;
+						filter: alpha(opacity = 25);
+						-moz-opacity: 0.3;
+					}
+					
+					.drop_down_arrow {
+						border-left-width: 0px;
+						padding: 1px 2px 1px 1px !important;
+					}
+						
+					.drop_down_arrow_hover {
+						border-left: 1px solid #08246B;
+						padding: 1px 2px 1px 0px !important;
+					}
+					
+					.drop_down_image {
+							padding: 1px 2px !important;
+					}
+					.drop_down_image_disabled{
+							filter: alpha(opacity = 25);
+							-moz-opacity: 0.3;
+					}
+					table.lcontainer {
+						font-size:12px;
+						border: 1px solid white;
+						padding:0px;
+						margin:2px 2px;
+						cursor: default;
+						background-color: #ffffff;
+					}
+
+					table.lcontainer_hover {
+						border-color: #08246B;
+					}
+
+					table.lcontainer_disabled {
+						font-size:12px;
+						border: 1px solid white;
+						padding:0px;
+						margin:2px 2px;
+						background-color: #ffffff;
+						filter: alpha(opacity = 25);
+						-moz-opacity: 0.3;
+					}
+
+					table.lcontainer div.lcontainer_text,
+					table.lcontainer_disabled div.lcontainer_text {
+					font: menu;
+					line-height:11px !important;
+					cursor:default;
+					padding:1px 2px;
+					overflow:hidden;
+					background-color:white;
+					text-overflow:ellipsis;
+					white-space:nowrap;
+					}
+					.lcontainer_vrule_hover {
+						border-left: 1px solid #08246B;
+					}
+					
+					.lcontainer_vrule {
+						border-left: 1px solid white;		
+					}
+
+					div.optcontainer {
+						display: none;
+						position: absolute;
+						left: -1000px;
+						width:300px;
+						height: 150px;
+						overflow: auto;
+						border: 1px solid black;
+						background-color: #ffffff;
+						font-size: 12px;
+						z-index:400;
+					}
+					div.optcontainer div.opt {
+						overflow: hidden;
+						margin: 1px;
+						padding: 1px;
+						cursor: default;
+						font-size: 12px;
+					}
+
+	/* center tr, with the textarea and iframe */
+	.ktml iframe {
+		margin: 0px;
+	}
+
+	/* lower tr with the tag inspector, introspector etc */
+	.ktml tr td.taginspector {
+		font: 9px "Microsoft Sans Serif",Tahoma,Arial,Verdana,sans-serif;
+	}
+		.ktml tr td.taginspector div {
+			white-space: nowrap;
+			line-height: 25px; 
+			vertical-align: center;
+		}
+		/* separator tag with ">" between the links */
+		.ktml tr td.taginspector div span.sep {
+			text-align: center;
+			top: 2px;
+			margin: 0px;
+			padding: 0px;
+			font: 11px/12px "Microsoft Sans Serif",Tahoma,Arial,Verdana,sans-serif;
+		}
+		/* all links in tag inspector  */
+		.ktml tr td.taginspector div a.tagitem, 
+		.ktml tr td.taginspector div a.tagitem_current, 
+		a.tagitem:visited,
+		a.tagitem:active,
+		a.tagitem:hover
+		{
+			color: #0000ff;
+			font: 9px "Microsoft Sans Serif",Tahoma,Arial,Verdana,sans-serif;
+			line-height: 12px;
+			text-decoration: none;
+			text-align: center;
+			display: block;
+			height: 14px;
+			margin-top: 4px;
+			padding-left: 2px;
+			padding-right: 2px;
+			margin-left: 2px;
+			margin-right: 1px;
+			-moz-outline-style:none;
+		}
+
+		.ktml tr td.taginspector div a.tagitem_current{
+			color: #000000;
+			background-color: #ffffff;
+			margin-top: 3px;
+			margin-right: 0px;
+			margin-left: 1px;
+			border: 1px solid #cccccc;
+		};
+		
+		.ktml tr td.taginspector div a.tagitem:active,
+		.ktml tr td.taginspector div a.tagitem_current:active {
+			border-color: buttonshadow buttonhighlight buttonhighlight buttonshadow;
+		}
+		
+		.ktml tr td.taginspector div a.tagitem:hover,
+		.ktml tr td.taginspector div a.tagitem_current:hover {
+			margin-top: 3px;
+			margin-right: 0px;
+			margin-left: 1px;
+			border: 1px solid;
+			border-color: #f5f5f5 #808080 #808080 #f5f5f5;
+		}
+
+		/* Property Inspector Pannel */
+		.ktml tr td.propertyinspector td {
+			font-size: 12px ! important;
+		}
+			.ktml tr td.propertyinspector div {
+				float: left;
+			}
+			.propertyinspector .toolbaritem_flat {
+				float: none ! important;
+			}
+
+			.ktml tr td.propertyinspector div.ktml_collapse {
+				background: url(../img/arrow_right.gif) no-repeat center bottom;
+				padding: 0px;
+				margin: 0px;
+				width: 8px;
+				cursor: pointer;
+				cursor: hand;
+				visibility: hidden;
+			}
+				.ktml tr td.propertyinspector div.ktml_collapse_closed {
+					background: url(../img/arrow_right.gif) no-repeat bottom;
+				}
+				.ktml tr td.propertyinspector div.ktml_collapse_open {
+					background: #F7F7F7 url(../img/arrow_left.gif) no-repeat bottom;
+				}
+
+			.ktml tr td.propertyinspector div * {
+				float: none;
+			}
+			.ktml tr td.propertyinspector div.property_body {
+				z-index:0;
+			}
+			.ktml tr td.propertyinspector div.property_body fieldset {
+				border: 1px solid #666666;
+				padding: 2px;
+				margin: 0 5px 5px 5px;
+				height: 63px; /*container.width-margin(5*1)-border(1*2)-padding(2*2)*/
+			}
+	.ktml table.introspector {
+		font-family: "Microsoft Sans Serif",Tahoma,Arial,Verdana,sans-serif;
+		font-size: 11px;
+		margin-top: 0px;
+		vertical-align:top;
+	}
+		.ktml table.introspector * {
+			float:none;
+			vertical-align: middle;
+		}
+	.ktml #ARMP{
+		width: 100% !important;
+	}
+	
+/* common :: color chooser */
+div.cc_container, 
+div.cp_container {
+	display: none;
+	position: absolute;
+	background-color: transparent;
+}
+
+	div.cc_container table {
+		font: 10px Verdana;
+	}
+
+		table.cc_innertable td {
+		}
+
+/* common :: html dropdown styles */
+/* div for catching events */
+.shadow {
+	display:none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 10px;
+	margin: 0px;
+	padding: 0px;
+	border: 0px solid black;
+	background:url(../img/sbig.gif);
+}
+
+.cc_container {
+	width: 297px;
+	height: 100px;
+}
+
+.color_picker_color_table {
+	width:199px;
+	height:120px;
+	overflow:hidden;
+	border:0px solid black;
+}
+
+.color_picker_color_table div.empty {
+	width:11px;
+	height:11px;
+	overflow:hidden;
+	font-size:8px;
+	line-height:8px;
+	float:left;
+	border-width:0px;
+	margin:0px;
+}
+.color_picker_color_table div.color {
+	width:10px;
+	height:10px;
+	overflow:hidden;
+	font-size:8px;
+	line-height:8px;
+	float:left;
+	border-style:solid;
+	border-color:#DDDDDD;
+	border-width:1px;
+	margin:0px -1px -1px 0px;
+	cursor:pointer;
+	cursor:hand;
+}
+input.color_picker_current_color {
+	width:70px;
+	font-size:12px;
+	float:left;
+}
+.color_picker_preview_color {
+	display:block;
+	width:80px;
+	margin:0px 4px 0px 4px;
+	padding:2px 8px;
+	text-align:center;
+	float:left;
+}
+
+/*
+character picker
+*/
+.cp_container {
+	width: 314px;
+	height: 106px;
+}
+
+.character_picker_character_table {
+	width:226px;
+	height:120px;
+	overflow:hidden;
+	border:0px solid black;
+}
+.character_picker_character_table div.character {
+	text-align: center;
+	border:1px solid silver;
+	width:14px;
+	height:14px;
+	overflow:hidden;
+	font-size:11px;
+	float:left;
+	padding:1px 0px 0px 1px;
+	margin:0px -1px -1px 0px;
+	cursor:pointer;
+	cursor:hand;
+	background-color:transparent;
+}
+.character_picker_character_table div.character.hover {
+	background-color:#D1D0E6;
+}
